@@ -1,5 +1,5 @@
 ---
-name: User Story
+name: Watches & Clocks - User Story
 about: This is the Watches & Clocks default user story template
 title: 'USER STORY: <Title>'
 labels: ''
