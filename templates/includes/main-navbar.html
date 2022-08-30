@@ -1,0 +1,69 @@
+<!-- MAIN NAVBAR -->
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Products
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href=" url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href=" url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href=" url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href=" url 'products' %}" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Watches
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+                <a href=" url 'products' %}?category=Smart Watch" class="dropdown-item">Smart Watches</a>
+                <a href=" url 'products' %}?category=Classic" class="dropdown-item">Classic Watches</a>
+                <a href=" url 'products' %}?category=shirts" class="dropdown-item">Automatic Watches</a>
+                <a href=" url 'products' %}?category=shirts" class="dropdown-item">Wall Clocks</a>
+                <a href=" url 'products' %}?category=Smart Watch,Classic," class="dropdown-item">All Watches</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gender
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+                <a href=" url 'products' %}?gender_category=Ladies" class="dropdown-item">Ladies</a>
+                <a href=" url 'products' %}?gender_category=Mens" class="dropdown-item">Mens</a>
+                <a href=" url 'products' %}?gender_category=Kids" class="dropdown-item">Kids</a>
+                <a href=" url 'products' %}?gender_category=Ladies,Mens,Kids" class="dropdown-item">All Homeware</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Special Offers
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href=" url 'products' %}?product_status=New" class="dropdown-item">New Arrivals</a>
+                <a href=" url 'products' %}?product_status=Sales" class="dropdown-item">Sales</a>
+                <a href=" url 'products' %}?product_status=Clearance" class="dropdown-item">Clearance</a>
+                <a href=" url 'products' %}?product_status=New Product,New,Sales,Clearance" class="dropdown-item">All Specials</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href=" url 'reviews' " class="dropdown-item">Customers Reviews</a>
+                {% if user.is_authenticated or user.is_superuser %}
+                <a href=" url 'add_review' " class="dropdown-item">Add Review</a>
+                {% else %}
+                {% endif %}
+                <a href="/" class="dropdown-item">Intro</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'home' %}" id="specials-link">
+                Home
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- END OF MAIN NAVBAR -->
