@@ -1,0 +1,86 @@
+{% load static %}
+
+{% block content %}
+<!-- PRODUCTS SELECTED SECTION -->
+<section id="products_selected" class="container">
+    <h2 class="sub-title">Selected Products</h2>
+    <div class="row">
+        {% for product in products_selected %}
+            <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3">
+                <div class="card h-100 border-0">
+                    {% if product.image %}
+                    <a href=" url 'product_detail' product.id %}">
+                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    {% else %}
+                    <a href=" url 'product_detail' product.id %}">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    </a>
+                    {% endif %}
+                    <div class="card-body pb-0">
+                        <p class="mb-0">{{ product.name }}</p>
+                    </div>
+                    <div class="card-footer bg-white pt-0 border-0 text-left">
+                        <div class="row">
+                            <div class="col">
+                                {% if product.old_price %}
+                                <p class="lead mb-0 text-left font-weight-bold line-through">€{{ product.old_price }}</p>
+                                <p class="lead mb-0 text-left font-weight-bold text-success">€{{ product.price }}</p>
+                                <span><img class="w-25" src="https://thumbs.dreamstime.com/b/sales-banner-colorful-price-tags-sale-sign-40114844.jpg" alt=""></span>
+                                {% else %}
+                                <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                                {% endif %}
+                                {% if product.category %}
+                                <p class="small mt-1 mb-0">
+                                    <a class="text-muted" href=" url 'products' %}?category={{ product.category.name }}">
+                                        <i class="fas fa-tag mr-1 interactive-color"></i>{{ product.category.friendly_name }}
+                                    </a>
+                                </p>
+                                {% endif %}
+                                {% if product.rating %}
+                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                {% else %}
+                                    <small class="text-muted">No Rating</small>
+                                {% endif %}
+                                {% if product.comming_soon %}
+                                <div>
+                                    <img class="w-25" src="https://us.123rf.com/450wm/mivgor/mivgor1810/mivgor181000040/110045414-red-vector-banner-ribbon-coming-soon-on-white-background-with-soft-shadow.jpg?ver=6" alt="">
+                                    <br>
+                                    <a href=" url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-orange">Discover More</a>
+                                </div>
+                                {% else %}
+                                <div>
+                                    <a href=" url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-warning">Buy Now</a>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% if forloop.counter|divisibleby:1 %}
+                <div class="col-12 d-sm-none mb-5">
+                    <hr>
+                </div>
+            {% endif %}                        
+            {% if forloop.counter|divisibleby:2 %}
+                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                    <hr>
+                </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:3 %}
+                <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                    <hr>
+                </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:4 %}
+                <div class="col-12 d-none d-xl-block mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% endfor %}
+    </div>
+</section>
+<!-- END OF PRODUCTS SELECTED SECTION -->
+{% endblock content %}
+
