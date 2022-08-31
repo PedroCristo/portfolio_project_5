@@ -9,11 +9,11 @@
             <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3">
                 <div class="card h-100 border-0">
                     {% if product.image %}
-                    <a href=" url 'product_detail' product.id %}">
+                    <a href="{% url 'product_detail' product.id %}">
                         <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                     </a>
                     {% else %}
-                    <a href=" url 'product_detail' product.id %}">
+                    <a href="{% url 'product_detail' product.id %}">
                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     </a>
                     {% endif %}
@@ -32,7 +32,7 @@
                                 {% endif %}
                                 {% if product.category %}
                                 <p class="small mt-1 mb-0">
-                                    <a class="text-muted" href=" url 'products' %}?category={{ product.category.name }}">
+                                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
                                         <i class="fas fa-tag mr-1 interactive-color"></i>{{ product.category.friendly_name }}
                                     </a>
                                 </p>
@@ -46,11 +46,11 @@
                                 <div>
                                     <img class="w-25" src="https://us.123rf.com/450wm/mivgor/mivgor1810/mivgor181000040/110045414-red-vector-banner-ribbon-coming-soon-on-white-background-with-soft-shadow.jpg?ver=6" alt="">
                                     <br>
-                                    <a href=" url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-orange">Discover More</a>
+                                    <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-orange">Discover More</a>
                                 </div>
                                 {% else %}
                                 <div>
-                                    <a href=" url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-warning">Buy Now</a>
+                                    <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-warning">Buy Now</a>
                                 </div>
                                 {% endif %}
                             </div>
