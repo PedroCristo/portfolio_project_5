@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- PRODUCT DETAILS SECTION -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
+                {% if product.image %}
+                <div class="img-magnifier-container">
+                        <img class="card-img-top img-fluid" src="{{ product.image.url}}" alt="{{ product.name }} Image">
+                </div>
+                {% else %}
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="product-details-container mb-5 mt-md-5">
+                <p class="mb-0">{{ product.name }}</p>
+                {% if product.old_price %}
+                <p class="lead mb-0 text-left font-weight-bold line-through">€{{ product.old_price }}</p>
+                <p class="lead mb-0 text-left font-weight-bold text-success">€{{ product.price }}</p>
+                <span><img src="https://thumbs.dreamstime.com/b/sales-banner-colorful-price-tags-sale-sign-40114844.jpg" alt="" style="width: 25%;"></span>
+                {% else %}
+                <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                {% endif %}
+                {% if product.category %}
+                <p class="small mt-1 mb-0">
+                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                        <i class="fas fa-tag mr-1 interactive-color"></i>{{ product.category.friendly_name }}
+                    </a>
+                </p>
+                {% endif %}
+                {% if product.rating %}
+                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                {% else %}
+                <small class="text-muted">No Rating</small>
+                {% endif %}
+                {% if request.user.is_superuser %}
+                <small class="ml-3">
+                    <a href=" url 'edit_product' product.id %}">Edit</a> |
+                    <a class="text-danger" href=" url 'delete_product' product.id %}">Delete</a>
+                </small>
+                {% endif %}
+                <p class="mt-3">{{ product.description | safe }}</p>
+                <form class="form" action=" url 'add_to_bag' product.id %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        {% with product.has_sizes as s %}
+                        {% if s %}
+                        <div class="col-12">
+                            <p><strong>Size:</strong></p>
+                            <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                <option value="xs">28 MM</option>
+                                <option value="s">32 MM</option>
+                                <option value="m" selected>36 MM</option>
+                                <option value="l">40 MM</option>
+                                <option value="xl">42 MM</option>
+                            </select>
+                        </div>
+                        {% endif %}
+                        {% if product.comming_soon %}
+                        <div class="col{% if s %}-12 mt-2{% endif %}">
+                            <img class="w-25" src="https://us.123rf.com/450wm/mivgor/mivgor1810/mivgor181000040/110045414-red-vector-banner-ribbon-coming-soon-on-white-background-with-soft-shadow.jpg?ver=6" alt="">
+                            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span><br>
+                            </a>
+                        </div>
+                        {% else %}
+                        <div class="col-12">
+                            <p class="mt-3"><strong>Quantity:</strong></p>
+                            <div class="form-group w-50">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <button class="decrement-qty btn btn-black rounded-0"
+                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                            <span class="icon">
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <input class="form-control qty_input" type="number" name="quantity" value="1"
+                                        min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                    <div class="input-group-append">
+                                        <button class="increment-qty btn btn-black rounded-0"
+                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                            <span class="icon">
+                                                <i class="fas fa-plus"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col{% if s %}-12 mt-2{% endif %}">
+                            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                        </div>
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        {% endif %}
+                        {% endwith %}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="product-description">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="sub-title">Watch Details：</h2>
+                <p class="mt-3">{{ product.watch_details | safe }}</p>
+            </div>
+            <div class="col-12">
+                <h2 class="sub-title">Feature：</h2>
+                <p class="mt-3">{{ product.features | safe }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END OF PRODUCT DETAILS SECTION -->
+
+<!-- PRODUCTS PROMOTION CAROUSEL -->
+<!--  include "includes/products_promotion.html" %} -->
+<!-- END OF PRODUCTS PROMOTION CAROUSEL -->
+{% endblock %}
+
+{% block postloadjs %}
+
+{{ block.super }}
+<!-- QUANTITY INPUT SCRIPT -->
+<!--  include 'includes/quantity_input_script.html' %} -->
+<!-- END OF QUANTITY INPUT SCRIPT -->
+{% endblock %}
