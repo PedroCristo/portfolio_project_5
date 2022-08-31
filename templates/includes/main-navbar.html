@@ -6,10 +6,10 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href=" url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href=" url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href=" url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href=" url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -17,11 +17,11 @@
                 Watches
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href=" url 'products' %}?category=Smart Watch" class="dropdown-item">Smart Watches</a>
-                <a href=" url 'products' %}?category=Classic" class="dropdown-item">Classic Watches</a>
-                <a href=" url 'products' %}?category=shirts" class="dropdown-item">Automatic Watches</a>
-                <a href=" url 'products' %}?category=shirts" class="dropdown-item">Wall Clocks</a>
-                <a href=" url 'products' %}?category=Smart Watch,Classic," class="dropdown-item">All Watches</a>
+                <a href="{% url 'products' %}?category=Smart Watch" class="dropdown-item">Smart Watches</a>
+                <a href="{% url 'products' %}?category=Classic" class="dropdown-item">Classic Watches</a>
+                <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Automatic Watches</a>
+                <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Wall Clocks</a>
+                <a href="{% url 'products' %}?category=Smart Watch,Classic," class="dropdown-item">All Watches</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -29,10 +29,10 @@
                 Gender
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href=" url 'products' %}?gender_category=Ladies" class="dropdown-item">Ladies</a>
-                <a href=" url 'products' %}?gender_category=Mens" class="dropdown-item">Mens</a>
-                <a href=" url 'products' %}?gender_category=Kids" class="dropdown-item">Kids</a>
-                <a href=" url 'products' %}?gender_category=Ladies,Mens,Kids" class="dropdown-item">All Homeware</a>
+                <a href="{% url 'products' %}?gender_category=Ladies" class="dropdown-item">Ladies</a>
+                <a href="{% url 'products' %}?gender_category=Mens" class="dropdown-item">Mens</a>
+                <a href="{% url 'products' %}?gender_category=Kids" class="dropdown-item">Kids</a>
+                <a href="{% url 'products' %}?gender_category=Ladies,Mens,Kids" class="dropdown-item">All Homeware</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -40,10 +40,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href=" url 'products' %}?product_status=New" class="dropdown-item">New Arrivals</a>
-                <a href=" url 'products' %}?product_status=Sales" class="dropdown-item">Sales</a>
-                <a href=" url 'products' %}?product_status=Clearance" class="dropdown-item">Clearance</a>
-                <a href=" url 'products' %}?product_status=New Product,New,Sales,Clearance" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?product_status=New" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?product_status=Sales" class="dropdown-item">Sales</a>
+                <a href="{% url 'products' %}?product_status=Clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?product_status=New Product,New,Sales,Clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -51,9 +51,9 @@
                 More
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href=" url 'reviews' " class="dropdown-item">Customers Reviews</a>
+                <a href=" url 'reviews' %}" class="dropdown-item">Customers Reviews</a>
                 {% if user.is_authenticated or user.is_superuser %}
-                <a href=" url 'add_review' " class="dropdown-item">Add Review</a>
+                <a href=" url 'add_review' %}" class="dropdown-item">Add Review</a>
                 {% else %}
                 {% endif %}
                 <a href="/" class="dropdown-item">Intro</a>
