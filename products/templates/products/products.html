@@ -95,7 +95,7 @@
                                             {% if request.user.is_superuser %}
                                             <hr>
                                                 <div class="text-center mt-3">
-                                                    <a href=" url 'edit_product' product.id %}" class="btn-edit btn-sm btn-secondary mb-3"
+                                                    <a href="{% url 'edit_product' product.id %}" class="btn-edit btn-sm btn-secondary mb-3"
                                                         aria-label="Go to the Edit Product Page">Edit</a>
                                                     <button type="button" class="btn-sm btn-danger mb-3" data-bs-toggle="modal"
                                                         data-bs-target="#delete-product">Delete</button>
@@ -113,7 +113,7 @@
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary"
                                                                     data-bs-dismiss="modal">Close</button>
-                                                                <a href=" url 'delete_product' product.id %}" class="btn btn-danger"
+                                                                <a href="{% url 'delete_product' product.id %}" class="btn btn-danger"
                                                                     aria-label="Delete Product">Delete</a>
                                                             </div>
                                                         </div>
