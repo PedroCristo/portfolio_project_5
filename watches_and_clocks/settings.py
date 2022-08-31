@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
     # Others
     'django_summernote',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -78,6 +79,10 @@ TEMPLATES = [
                 'django.template.context_processors.media',
                 'products.context_processors.products_selected',
             ],
+                'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
