@@ -48,11 +48,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if product.image %}
-                                <a href=" url 'product_detail' product.id %}">
+                                <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                                 {% else %}
-                                <a href="url 'product_detail' product.id %}">
+                                <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
                                 {% endif %}
@@ -85,11 +85,11 @@
                                             <div>
                                                 <img class="w-50" src="https://us.123rf.com/450wm/mivgor/mivgor1810/mivgor181000040/110045414-red-vector-banner-ribbon-coming-soon-on-white-background-with-soft-shadow.jpg?ver=6" alt="">
                                                 <br>
-                                                <a href=" url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-orange">Discover More</a>
+                                                <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-orange">Discover More</a>
                                             </div>
                                             {% else %}
                                             <div>
-                                                <a href=" url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-warning">Buy Now</a>
+                                                <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-warning">Buy Now</a>
                                             </div>
                                             {% endif %}
                                             {% if request.user.is_superuser %}
