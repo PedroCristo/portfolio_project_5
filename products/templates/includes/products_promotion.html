@@ -1,0 +1,69 @@
+{% load static %}
+
+{% block content %}
+<!-- PRODUCTS PROMOTION SECTION -->
+<section id="products_selected" class="container">
+    <hr>
+    <h2 class="sub-title">Promotion Products</h2>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 m-auto">
+                <div class="owl-carousel owl-theme">
+                    {% for product in products_promotion %}
+                        <div class="card h-100 border-0">
+                            {% if product.image %}
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="card-img-top img-fluid w-75" src="{{ product.image.url }}" alt="{{ product.name }}">
+                            </a>
+                            {% else %}
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="card-img-top img-fluid w-75" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                            </a>
+                            {% endif %}
+                            <div class="card-body pb-0">
+                                <p class="mb-0">{{ product.name }}</p>
+                            </div>
+                            <div class="card-footer bg-white pt-0 border-0 text-left">
+                                <div class="row">
+                                    <div class="col">
+                                        {% if product.old_price %}
+                                        <p class="lead mb-0 text-left font-weight-bold line-through">€{{ product.old_price }}</p>
+                                        <p class="lead mb-0 text-left font-weight-bold text-success">€{{ product.price }}</p>
+                                        <span><img class="w-25" src="https://thumbs.dreamstime.com/b/sales-banner-colorful-price-tags-sale-sign-40114844.jpg" alt=""></span>
+                                        {% else %}
+                                        <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                                        {% endif %}
+                                        {% if product.category %}
+                                        <p class="small mt-1 mb-0">
+                                            <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                <i class="fas fa-tag mr-1 interactive-color"></i>{{ product.category.friendly_name }}
+                                            </a>
+                                        </p>
+                                        {% endif %}
+                                        {% if product.rating %}
+                                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                        {% else %}
+                                            <small class="text-muted">No Rating</small>
+                                        {% endif %}
+                                        {% if product.comming_soon %}
+                                        <div>
+                                            <img class="w-25" src="https://us.123rf.com/450wm/mivgor/mivgor1810/mivgor181000040/110045414-red-vector-banner-ribbon-coming-soon-on-white-background-with-soft-shadow.jpg?ver=6" alt="">
+                                            <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-orange">Discover More</a>
+                                        </div>
+                                        {% else %}
+                                        <div>
+                                            <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-warning">Buy Now</a>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END OF PRODUCTS PROMOTION SECTION -->
+{% endblock content %}
