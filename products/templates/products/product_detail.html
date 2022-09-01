@@ -48,12 +48,12 @@
                 {% endif %}
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
-                    <a href=" url 'edit_product' product.id %}">Edit</a> |
-                    <a class="text-danger" href=" url 'delete_product' product.id %}">Delete</a>
+                    <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                 </small>
                 {% endif %}
                 <p class="mt-3">{{ product.description | safe }}</p>
-                <form class="form" action=" url 'add_to_bag' product.id %}" method="POST">
+                <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
                         {% with product.has_sizes as s %}
@@ -127,12 +127,12 @@
     <div class="product-description">
         <div class="row">
             <div class="col-12">
-                <h2 class="sub-title">Watch Details：</h2>
-                <p class="mt-3">{{ product.watch_details | safe }}</p>
+                <h2 class="sub-title">Features：</h2>
+                <p class="mt-3">{{ product.features | safe }}</p>
             </div>
             <div class="col-12">
-                <h2 class="sub-title">Feature：</h2>
-                <p class="mt-3">{{ product.features | safe }}</p>
+                <h2 class="sub-title">Watch Details：</h2>
+                <p class="mt-3">{{ product.watch_details | safe }}</p>
             </div>
         </div>
     </div>
@@ -140,7 +140,7 @@
 <!-- END OF PRODUCT DETAILS SECTION -->
 
 <!-- PRODUCTS PROMOTION CAROUSEL -->
- {% include "includes/products_promotion.html" %}
+{% include "includes/products_promotion.html" %}
 <!-- END OF PRODUCTS PROMOTION CAROUSEL -->
 {% endblock %}
 
@@ -148,6 +148,6 @@
 
 {{ block.super }}
 <!-- QUANTITY INPUT SCRIPT -->
-<!--  include 'includes/quantity_input_script.html' %} -->
+{% include 'includes/quantity_input_script.html' %}
 <!-- END OF QUANTITY INPUT SCRIPT -->
 {% endblock %}
