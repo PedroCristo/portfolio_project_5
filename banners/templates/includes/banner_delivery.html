@@ -1,0 +1,16 @@
+{% load static %}
+
+
+{% block content %}
+<!-- DELIVERY BANNER -->
+<div id="delivery-banner" class="container-fluid">
+    <div class="row text-center">
+      <div class="col-12 bg-warning text-white">
+        <h4 class="logo-font my-1">
+          Free delivery on orders over €{{ free_delivery_threshold }}!
+        </h4>
+      </div>
+    </div>
+  </div>
+  <!-- END OF DELIVERY BANNER -->
+{% endblock %}

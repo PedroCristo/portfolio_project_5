@@ -1,0 +1,14 @@
+{% load static %}
+
+
+{% block content %}
+<!-- HOME BANNER BOTTOM -->
+<div id="banner-bottom" class="mt-5 mb-5">
+    <div class="container-xxl">
+      {% for banner in home_banner_bottom %}
+      <img class="w-100" src="{{ banner.image.url }}" alt="{{ banner.name }} - {{ banner.description }}">
+      {% endfor %}
+    </div>
+  </div>
+  <!-- END OF HOME BANNER BOTTOM -->
+{% endblock %}
