@@ -51,9 +51,9 @@
                 More
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href=" url 'reviews' %}" class="dropdown-item">Customers Reviews</a>
+                <a href="{% url 'reviews' %}" class="dropdown-item">Customers Reviews</a>
                 {% if user.is_authenticated or user.is_superuser %}
-                <a href=" url 'add_review' %}" class="dropdown-item">Add Review</a>
+                <a href="{% url 'add_review' %}" class="dropdown-item">Add Review</a>
                 {% else %}
                 {% endif %}
                 <a href="/" class="dropdown-item">Intro</a>
