@@ -20,8 +20,13 @@
     {% for banner in banners_carousel %}
     <div class="carousel-item {% if forloop.first %} active {% endif %}">
       <img
-        class="d-block w-100"
+        class="d-block w-100 display-desktop"
         src="{{ banner.image.url }}"
+        alt="{{ banner.name }} - {{ banner.description }}"
+      />
+      <img
+        class="d-block w-100 display-mobile"
+        src="{{ banner.image_small.url }}"
         alt="{{ banner.name }} - {{ banner.description }}"
       />
     </div>
