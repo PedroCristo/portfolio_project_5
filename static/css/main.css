@@ -95,8 +95,9 @@ i {
     font-family: 'Kaushan Script', cursive;
 }
 
-.logo-mobile {
-    display: none;
+.logo-mobile,
+.display-mobile {
+    display: none !important;
 }
 
 .btt-button {
@@ -184,14 +185,6 @@ i {
     height: 100%;
     object-fit: cover;
     object-position: 0px 80%;
-}
-
-.video-desktop {
-    display: block !important;
-}
-
-.video-mobile {
-    display: none !important;
 }
 
 #intro-section .logo-mobile {
@@ -716,7 +709,6 @@ input[name='q']::placeholder {
     .logo-mobile {
         display: block;
         font-size: 1rem;
-
     }
 
     body {
@@ -854,11 +846,11 @@ input[name='q']::placeholder {
         object-position: -215px 80%;
     }
 
-    .video-desktop {
+    .display-desktop {
         display: none !important;
     }
 
-    .video-mobile {
+    .display-mobile {
         display: block !important;
     }
 
