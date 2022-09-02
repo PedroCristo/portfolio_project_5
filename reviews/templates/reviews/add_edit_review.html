@@ -1,0 +1,68 @@
+{% extends "base.html" %} {% load static %} {% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %} {% block content %}
+<!-- ADD/UPDATE REVIEWS SECTION -->
+<div id="add_review" class="edit-comments">
+  <div class="container">
+    <div class="row p-3">
+      <div class="col-12 text-center">
+        {% if reviews %}
+        <h1 class="sub-title mt-70">Edit Review As:</h1>
+        <p><i class="fas fa-user fa-lg interactive-color"></i> {{ user.username  | slice:":10" }}</p>
+        {% else %}
+        <h1 class="sub-title mt-70">Add Review As:</h1>
+         <p><i class="fas fa-user fa-lg interactive-color"></i> {{ user.username  | slice:":10" }}</p>
+        {% endif %}
+      </div>
+      <div class="col-md-6 mt-5 text-justify p-2">
+        {% if reviews %}
+        <h2 class="sub-title interactive-color">Change your review at<br>any time!</h2>
+        {% else %}
+        <h2 class="sub-title interactive-color">Your Opinion Matters!</h2>
+        {% endif %}
+        <p class="p-1">
+          We want to hear from you and this is your chance to let us know what you think
+          about our company and products. Your feedback will help us to improve the quality of the services.
+        </p>
+        <p class="p-1">
+        Please take this brief survey to provide your opinion about our website. The 
+        form should take no longer than 5 minutes to complete.
+        </p>
+        <p class="p-1">
+          Thanks very much.
+        </p>
+        <p class="p-1">
+          Watches & Clocks
+        </p>
+      </div>
+      <div class="col-md-6 p-2">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% for field in form %}
+                {% if field.name != 'image' %}
+                    {{ field | as_crispy_field }}
+                {% else %}
+                    {{ field }}
+                {% endif %}
+            {% endfor %}
+          </table>
+          <div class="text-center">
+            <button
+              class="btn btn-secondary right mb-4"
+              type="submit"
+              value="Save"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END ADD/UPDATE REVIEWS SECTION  -->
+{% endblock %}
