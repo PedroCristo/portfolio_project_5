@@ -707,7 +707,7 @@ input[name='q']::placeholder {
     }
 
     .logo-mobile {
-        display: block;
+        display: block !important;
         font-size: 1rem;
     }
 
