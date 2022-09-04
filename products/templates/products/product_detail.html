@@ -30,7 +30,7 @@
                 {% if product.old_price %}
                 <p class="lead mb-0 text-left font-weight-bold line-through">€{{ product.old_price }}</p>
                 <p class="lead mb-0 text-left font-weight-bold text-success">€{{ product.price }}</p>
-                <span><img src="https://thumbs.dreamstime.com/b/sales-banner-colorful-price-tags-sale-sign-40114844.jpg" alt="" style="width: 25%;"></span>
+                <img class="w-25" src="{{ MEDIA_URL }}extras_images/watches_clocks_sales_banner_350.webp" alt="{{ product.name }} on sale - image">
                 {% else %}
                 <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                 {% endif %}
@@ -78,7 +78,7 @@
                         {% endif %}
                         {% if product.comming_soon %}
                         <div class="col{% if s %}-12 mt-2{% endif %}">
-                            <img class="w-25" src="https://us.123rf.com/450wm/mivgor/mivgor1810/mivgor181000040/110045414-red-vector-banner-ribbon-coming-soon-on-white-background-with-soft-shadow.jpg?ver=6" alt="">
+                            <img class="w-50" src="{{ MEDIA_URL }}extras_images/watches_clocks_comming_soon_banner_350.webp" alt="{{ product.name }} Comming soon - image">
                             <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
