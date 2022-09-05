@@ -50,9 +50,9 @@
                 </div>
                 <div class="review-img">
                     {% if review.image %}
-                        <img class="card-img-top img-fluid w-25 mt-3" src="{{ review.image.url }}" alt="{{ review.name }} Review Image">
+                        <img class="review-image card-img-top img-fluid mt-3" src="{{ review.image.url }}" alt="{{ review.name }} Review Image">
                     {% else %}
-                        <img class="card-img-top img-fluid w-25 mt-3" src="{{ MEDIA_URL }}noimage.png" alt="{{ review.name }} Review Image">
+                        <img class="review-image card-img-top img-fluid mt-3" src="{{ MEDIA_URL }}noimage.png" alt="{{ review.name }} Review Image">
                     {% endif %}
                 </div>
                 {% if user.is_authenticated and user.username == review.name or user.is_superuser %}
