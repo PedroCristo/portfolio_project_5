@@ -37,6 +37,10 @@ body.modal-open {
     margin: 100px 0;
 }
 
+.review-image  {
+    width: 25%;
+}
+
 /*******************************
 *                              *
 *          MEDIA QUERIES       *
@@ -47,5 +51,10 @@ body.modal-open {
     .banner-box {
         display: none;
     }
+
+    .review-image  {
+        width: 50%;
+    }
+    
 }
 
