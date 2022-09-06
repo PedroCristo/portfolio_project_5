@@ -25,7 +25,7 @@ def banner_bottom(request):
 
 def banner_vertival(request):
     """ A view to dispaly a vertical banner """
-    banner_vertival = BannerVerical.objects.filter(featured=True)
+    banner_vertival = BannerVertical.objects.filter(featured=True)
 
     context = {
         'banner_vertival': banner_vertival,

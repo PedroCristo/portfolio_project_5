@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import BannerCarousel, BannerBottom, BannerVerical
+from .models import BannerCarousel, BannerBottom, BannerVertical
 
 
 @admin.register( BannerCarousel)
@@ -21,8 +21,8 @@ class BannerBottom(admin.ModelAdmin):
     )
 
 
-@admin.register(BannerVerical)
-class BannerVerical(admin.ModelAdmin):
+@admin.register(BannerVertical)
+class BannerVertical(admin.ModelAdmin):
     list_display = (
         'name',
         'description',

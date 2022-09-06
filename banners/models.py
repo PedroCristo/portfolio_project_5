@@ -35,7 +35,7 @@ class BannerBottom(models.Model):
         return self.name        
 
 
-class BannerVerical(models.Model):
+class BannerVertical(models.Model):
     """
     Modal for banner home bottom
     """
