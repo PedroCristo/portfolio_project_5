@@ -566,7 +566,7 @@ input[name='q']::placeholder {
 *******************************/
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
-    color: #6c757d;/
+    color: #6c757d;
 }
 
 .allauth-form-inner-content input {
@@ -836,7 +836,7 @@ input[name='q']::placeholder {
 
 @media only screen and (max-width: 768px) {
     #intro-section video {
-        object-position: -180px 80%;
+        object-position: -60px 80%;
     }
 
 }
