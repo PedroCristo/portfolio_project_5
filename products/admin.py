@@ -10,6 +10,7 @@ class ProductAdmin(SummernoteModelAdmin):
         'name',
         'category',
         'gender_category',
+        'has_sizes',
         'old_price',
         'price',
         'rating',
