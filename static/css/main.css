@@ -615,7 +615,6 @@ input[name='q']::placeholder {
 }
 
 /* Product Form */
-
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -665,7 +664,6 @@ input[name='q']::placeholder {
 #mc_embed_signup .indicates-required {
     text-align: left;
 }
-
 
 /*******************************
 *                              *
@@ -761,7 +759,6 @@ input[name='q']::placeholder {
     }
 }
 
-
 @media only screen and (max-width: 991px) {
     .header-container {
         padding-top: 116px;
@@ -809,7 +806,6 @@ input[name='q']::placeholder {
         padding: 10px 15px;
     }
 }
-
 
 @media only screen and (max-width: 900px) {
     .row-reverse {
