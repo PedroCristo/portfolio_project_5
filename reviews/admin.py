@@ -8,6 +8,7 @@ class ReviewsAdmin(admin.ModelAdmin):
         'name',
         'review_name',
         'timestamp',
+        'service_review',
         'rating',
         'service_rating',
         'approved',
