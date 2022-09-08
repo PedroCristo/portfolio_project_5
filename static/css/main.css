@@ -896,6 +896,10 @@ input[name='q']::placeholder {
     .header-container {
         padding-top: 120px;
     }
+
+    .sub-title {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 333px) {
