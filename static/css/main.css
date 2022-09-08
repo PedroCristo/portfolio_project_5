@@ -879,16 +879,30 @@ input[name='q']::placeholder {
     
 }
 
-@media only screen and (max-width:537px) {
+@media only screen and (max-width: 537px) {
     .logo-mobile {
         padding-top: 10px;
     }
+
+    #footer .sub-title {
+        font-size: 1.5rem;
+    }
 }
 
-@media only screen and (max-width:433px) {
+@media only screen and (max-width: 433px) {
     .header-container {
         padding-top: 120px;
     }
+}
+
+@media only screen and (max-width: 333px) {
+    #footer p {
+        width:255px !important;
+    }
+
+    #mc_embed_signup {
+        width: 250px !important;
+    } 
 }
 
 @media only screen and (max-height: 410px) {
@@ -896,3 +910,4 @@ input[name='q']::placeholder {
         top: 40px;
     }
 }
+
