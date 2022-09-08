@@ -772,7 +772,7 @@ input[name='q']::placeholder {
 
 @media only screen and (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 82px;
     }
 
     body {
