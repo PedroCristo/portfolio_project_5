@@ -207,6 +207,8 @@ i {
 }
 
 #intro-section .text-box {
+    position: absolute;
+    left: 50px;
     z-index: 10;
     margin-top: 25px;
 }
@@ -235,7 +237,7 @@ i {
 
 #intro-section .text-box p {
     font-size: 1.1rem;
-    width: 70%;
+    width: 90%;
 }
 
 #intro-section .text-box span {
@@ -911,7 +913,7 @@ input[name='q']::placeholder {
 
 @media only screen and (max-height: 410px) {
     #intro-section header {
-        top: 40px;
+        top: 40px !important;
     }
 }
 
