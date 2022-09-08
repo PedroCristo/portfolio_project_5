@@ -907,6 +907,10 @@ input[name='q']::placeholder {
 }
 
 @media only screen and (max-width: 333px) {
+    .list-inline-item p {
+        font-size: 0.9rem;
+    }
+
     #footer {
         padding: 20px 0px 10px 0px;
     }
