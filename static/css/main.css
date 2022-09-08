@@ -127,6 +127,10 @@ i {
     background: var(--white) !important;
 }
 
+.card-owl {
+    padding-left: 75px;
+}
+
 /*******************************
 *                              *
 *         INDEX PAGE           *
