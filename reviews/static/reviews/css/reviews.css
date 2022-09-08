@@ -41,6 +41,10 @@ body.modal-open {
     width: 25%;
 }
 
+.review-box p:nth-child(2) {
+    font-weight: 600;
+}
+
 /*******************************
 *                              *
 *          MEDIA QUERIES       *
