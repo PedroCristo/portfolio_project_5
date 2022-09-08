@@ -845,16 +845,12 @@ input[name='q']::placeholder {
 
 @media only screen and (max-width: 768px) {
     #intro-section video {
-        object-position: -60px 80%;
+        object-position: 0px 80%;
     }
 
 }
 
 @media only screen and (max-width: 600px) {
-    #intro-section video {
-        object-position: -215px 80%;
-    }
-
     .display-desktop {
         display: none !important;
     }
@@ -891,6 +887,12 @@ input[name='q']::placeholder {
     }
 }
 
+@media only screen and (max-width: 450px) {
+    #intro-section video {
+        object-position: -315px 80%;
+    }
+}
+
 @media only screen and (max-width: 433px) {
     .header-container {
         padding-top: 120px;
@@ -911,9 +913,11 @@ input[name='q']::placeholder {
     } 
 }
 
-@media only screen and (max-height: 410px) {
+
+@media only screen and (max-height: 400px) {
     #intro-section header {
-        top: 40px !important;
+        top: -20px !important;
     }
 }
+
 
