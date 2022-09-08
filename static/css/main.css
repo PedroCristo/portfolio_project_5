@@ -411,8 +411,8 @@ input[name='q']::placeholder {
 #products_selected {
     padding: 15px;
     margin-top: 35px;
-    padding-left: 80px;
 }
+
 
 /*******************************
 *                              *
@@ -853,6 +853,10 @@ input[name='q']::placeholder {
 
     .display-mobile {
         display: block !important;
+    }
+
+    .sub-title  {
+        text-align: center;
     }
 
     #footer .trust-company {
