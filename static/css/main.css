@@ -436,6 +436,7 @@ input[name='q']::placeholder {
 
 #footer .sub-title {
     margin-top: 20px;
+    text-align: left;
 }
 
 #footer ul li {
