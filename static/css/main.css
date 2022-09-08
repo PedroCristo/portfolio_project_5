@@ -403,6 +403,10 @@ input[name='q']::placeholder {
     margin-top: 25px;
 }
 
+#delivery-banner h4 {
+    padding: 8px 0;
+}
+
 /* Selected Products */
 #products_selected {
     padding: 15px;
