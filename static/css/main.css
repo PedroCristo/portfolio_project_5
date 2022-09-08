@@ -174,7 +174,7 @@ i {
 
 #intro-section header {
     position: absolute;
-    top: 0;
+    top: -22px;
     left: 0;
     padding: 50px;
     z-index: 10;
@@ -225,7 +225,7 @@ i {
 }
 
 #intro-section .text-box h3 {
-    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.7rem, 2.5vw, 2.5rem);
     margin-bottom: 15px;
 }
 
@@ -890,6 +890,10 @@ input[name='q']::placeholder {
     #intro-section video {
         object-position: -315px 80%;
     }
+
+    #intro-section header {
+        top: 40px !important;
+    }
 }
 
 @media only screen and (max-width: 433px) {
@@ -916,8 +920,3 @@ input[name='q']::placeholder {
     } 
 }
 
-@media only screen and (max-height: 600px) {
-    #intro-section header {
-        top: 30px !important;
-    }
-}
