@@ -62,3 +62,10 @@ body.modal-open {
     
 }
 
+@media only screen and (max-width: 450px) {
+
+input#id_image {
+    font-size: 0.6rem;
+}
+
+}
