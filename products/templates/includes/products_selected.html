@@ -6,7 +6,7 @@
     <h2 class="sub-title">Selected Products</h2>
     <div class="row">
         {% for product in products_selected %}
-            <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                 <div class="card h-100 border-0">
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
