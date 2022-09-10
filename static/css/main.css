@@ -110,10 +110,6 @@ i {
 
 }
 
-.owl-carousel .owl-item img {
-    width: 75%;
-}
-
 .owl-prev,
 .owl-next {
     font-size: 40px !important;
@@ -127,7 +123,7 @@ i {
 }
 
 .card-owl {
-    padding-left: 75px;
+    padding-left: 0px;
 }
 
 /*******************************
