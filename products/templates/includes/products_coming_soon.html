@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-12 m-auto">
                 <div class="owl-carousel owl-theme">
-                    {% for product in comming_soon %}
+                    {% for product in coming_soon %}
                         <div class="card card-owl h-100 border-0">
                             {% if product.image %}
                             <a href="{% url 'product_detail' product.id %}">
@@ -54,7 +54,7 @@
                                         {% endif %}
                                         {% if product.coming_soon %}
                                         <div>
-                                            <img class="w-75" src="{{ MEDIA_URL }}extras_images/watches_clocks_comming_soon_banner_350.webp" alt="{{ product.name }} Comming soon - image">
+                                            <img class="w-75" src="{{ MEDIA_URL }}extras_images/watches_clocks_coming_soon_banner_350.webp" alt="{{ product.name }} Coming soon - image">
                                             <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-orange">Discover More</a>
                                         </div>
                                         {% else %}
