@@ -831,11 +831,14 @@ input[name='q']::placeholder {
         text-align: left !important;
     }
 
+    .card-owl {
+        padding-left: 0 !important;
+    }
+
     .card-owl .product-img{
         width: 100% !important;
         padding-left: 0 !important;
     }
-    
 }
 
 @media only screen and (max-width: 537px) {
