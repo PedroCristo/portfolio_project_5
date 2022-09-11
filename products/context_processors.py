@@ -2,7 +2,7 @@ from .models import *
 
 
 def products_selected(request):
-    """ A view to show products selected """
+    """ A context processors to show products selected """
     products_selected = Product.objects.filter(featured=True)
 
     context = {
@@ -13,7 +13,7 @@ def products_selected(request):
 
 
 def products_sales(request):
-    """ A view to show products selected """
+    """ A context processors to show products sales """
     products_sales = Product.objects.filter(sales=True)
 
     context = {
@@ -24,7 +24,7 @@ def products_sales(request):
 
 
 def comming_soon(request):
-    """ A view to show products selected """
+    """ A context processors to show products comming soon """
     comming_soon = Product.objects.filter(comming_soon=True)
 
     context = {
