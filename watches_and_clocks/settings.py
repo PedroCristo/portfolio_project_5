@@ -93,7 +93,7 @@ TEMPLATES = [
                 'bag.contexts.bag_contents',
                 'products.context_processors.products_selected',
                 'products.context_processors.products_sales',
-                'products.context_processors.comming_soon',
+                'products.context_processors.coming_soon',
                 'reviews.context_processors.service_reviews',
                 'banners.context_processors.banner_carousel',
                 'banners.context_processors.banner_bottom',

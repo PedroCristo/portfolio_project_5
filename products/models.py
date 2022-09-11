@@ -75,7 +75,7 @@ class Product(models.Model):
         'ProductStatus', null=True, blank=True, on_delete=models.SET_NULL)
     featured = models.BooleanField(default=False)
     sales = models.BooleanField(default=False)
-    comming_soon = models.BooleanField(default=False)
+    coming_soon = models.BooleanField(default=False)
     
 
     def __str__(self):
