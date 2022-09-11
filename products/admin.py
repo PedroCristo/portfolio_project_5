@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, GenderCategory, Product_status
+from .models import Product, Category, GenderCategory, ProductStatus
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -39,8 +39,8 @@ class GenderCategoryAdmin(admin.ModelAdmin):
     )
 
 
-@admin.register(Product_status)
-class Product_statusAdmin(admin.ModelAdmin):
+@admin.register(ProductStatus)
+class ProductStatusAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
         'name',

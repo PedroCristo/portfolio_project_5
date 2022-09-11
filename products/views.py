@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category, GenderCategory, Product_status
+from .models import Product, Category, GenderCategory, ProductStatus
 from .forms import ProductForm
 
 # Create your views here.
@@ -52,7 +52,7 @@ def all_products(request):
         if 'product_status' in request.GET:
             product_status = request.GET['product_status'].split(',')
             products = products.filter(product_status__name__in=product_status)
-            product_status = Product_status.objects.filter(name__in=product_status)
+            product_status = ProductStatus.objects.filter(name__in=product_status)
 
         if 'q' in request.GET:
             query = request.GET['q']

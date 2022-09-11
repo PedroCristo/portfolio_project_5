@@ -33,7 +33,7 @@ class GenderCategory(models.Model):
         return self.friendly_name   
 
 
-class Product_status(models.Model):
+class ProductStatus(models.Model):
     """
     Modal for product status
     """
@@ -72,7 +72,7 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(upload_to='products_images/', null=True, blank=True)
     product_status = models.ForeignKey(
-        'Product_status', null=True, blank=True, on_delete=models.SET_NULL)
+        'ProductStatus', null=True, blank=True, on_delete=models.SET_NULL)
     featured = models.BooleanField(default=False)
     sales = models.BooleanField(default=False)
     comming_soon = models.BooleanField(default=False)
