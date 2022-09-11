@@ -1,4 +1,4 @@
-from .models import Product, ProductStatus
+from .models import Product
 
 
 def products_selected(request):
@@ -24,7 +24,7 @@ def products_sales(request):
 
 
 def coming_soon(request):
-    """ A context processors to show products comming soon """
+    """ A context processors to show products coming soon """
     coming_soon = Product.objects.filter(coming_soon=True)
 
     context = {
