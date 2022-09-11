@@ -854,6 +854,10 @@ input[name='q']::placeholder {
         display: block !important;
     }
 
+    #intro-section .overlay {
+        opacity: 0.8;
+    }
+
     .sub-title  {
         text-align: center;
     }
