@@ -92,7 +92,7 @@ TEMPLATES = [
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
                 'products.context_processors.products_selected',
-                'products.context_processors.products_promotion',
+                'products.context_processors.products_sales',
                 'products.context_processors.comming_soon',
                 'reviews.context_processors.service_reviews',
                 'banners.context_processors.banner_carousel',

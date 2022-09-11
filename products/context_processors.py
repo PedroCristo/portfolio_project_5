@@ -12,7 +12,7 @@ def products_selected(request):
     return context
 
 
-def products_promotion(request):
+def products_sales(request):
     """ A view to show products selected """
     products_sales = Product.objects.filter(sales=True)
 
