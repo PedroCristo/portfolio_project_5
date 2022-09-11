@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-12 m-auto">
                 <div class="owl-carousel owl-theme">
-                    {% for product in products_promotion %}
+                    {% for product in products_sales %}
                         <div class="card card-owl h-100 border-0">
                             {% if product.image %}
                             <a href="{% url 'product_detail' product.id %}">

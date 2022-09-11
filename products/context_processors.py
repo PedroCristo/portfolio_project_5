@@ -14,10 +14,10 @@ def products_selected(request):
 
 def products_promotion(request):
     """ A view to show products selected """
-    products_promotion = Product.objects.filter(sales=True)
+    products_sales = Product.objects.filter(sales=True)
 
     context = {
-        'products_promotion': products_promotion,
+        'products_sales': products_sales,
     }
 
     return context    
