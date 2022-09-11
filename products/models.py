@@ -17,7 +17,7 @@ class Category(models.Model):
         return self.friendly_name
 
 
-class Gender_category(models.Model):
+class GenderCategory(models.Model):
     """
     Modal for gender categories
     """
@@ -56,7 +56,7 @@ class Product(models.Model):
     category = models.ForeignKey(
         'Category', null=True, blank=True, on_delete=models.SET_NULL)
     gender_category = models.ForeignKey(
-        'Gender_category', null=True, blank=True, on_delete=models.SET_NULL)
+        'GenderCategory', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
