@@ -1,4 +1,4 @@
-from .models import *
+from .models import Product, ProductStatus
 
 
 def products_selected(request):
@@ -14,8 +14,8 @@ def products_selected(request):
 
 def products_sales(request):
     """ A context processors to show products sales """
-    products_sales = Product.objects.filter(sales=True)
-
+    products_sales = Product.objects.filter(product_status__name="Sales")
+  
     context = {
         'products_sales': products_sales,
     }
