@@ -8,7 +8,7 @@ class Reviews(models.Model):
     """
     class Meta:
         verbose_name_plural = 'Reviews'
-    review_name = models.CharField(max_length=100)
+    review_title = models.CharField(max_length=100)
     name = models.CharField(max_length=20)
     image = models.ImageField(upload_to='reviews_images/', null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
