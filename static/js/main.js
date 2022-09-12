@@ -1,14 +1,22 @@
 // Gets full year and display on the footer
 $("#year").text(new Date().getFullYear());
 
+ // Smooth scroll on click
+ $("a").on('click', function (e) {
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      e.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000);
+    }
+    // End if
+  });
 
-// Back to the top button
-$('.btt-link').click(function (e) {
-    window.scrollTo(0, 0)
-})
-
-
-//Navbar background and color changes on scrooll
+// Navbar position changes on scrooll
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(document).scrollTop() > 25) {
@@ -20,7 +28,6 @@ $(document).ready(function () {
         }
     });
 });
-
 
 // OWL Carousel
 $('.owl-carousel').owlCarousel({
