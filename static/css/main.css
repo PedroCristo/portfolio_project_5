@@ -884,6 +884,10 @@ input[name='q']::placeholder {
         padding: 20px 0px 10px 0px;
     }
 
+    #footer .copyright p {
+        width: 283px;
+    }
+
     #footer p {
         width:255px;
     }
