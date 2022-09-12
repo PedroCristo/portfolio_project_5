@@ -42,6 +42,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="{% url 'products' %}?product_status=New" class="dropdown-item">New Arrivals</a>
                 <a href="{% url 'products' %}?product_status=Sales" class="dropdown-item">Sales</a>
+                <a href="{% url 'products' %}?product_status=Coming Soon" class="dropdown-item">Coming Soon</a>
                 <a href="{% url 'products' %}?product_status=Clearance" class="dropdown-item">Clearance</a>
                 <a href="{% url 'products' %}?product_status=New,Sales,Clearance" class="dropdown-item">All Specials</a>
             </div>
