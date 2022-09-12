@@ -16,8 +16,6 @@ class ProductAdmin(SummernoteModelAdmin):
         'rating',
         'product_status',
         'featured',
-        'sales',
-        'coming_soon',
     )
     summernote_fields = ('description, watch_details,  features')
     ordering = ('sku',)

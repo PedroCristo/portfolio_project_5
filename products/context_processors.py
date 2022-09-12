@@ -25,7 +25,7 @@ def products_sales(request):
 
 def coming_soon(request):
     """ A context processors to show products coming soon """
-    coming_soon = Product.objects.filter(coming_soon=True)
+    coming_soon = Product.objects.filter(product_status__name="Coming Soon")
 
     context = {
         'coming_soon': coming_soon,
