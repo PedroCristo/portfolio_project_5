@@ -52,10 +52,16 @@
                                         {% else %}
                                             <small class="text-muted">No Rating</small>
                                         {% endif %}
+                                        {% if product.coming_soon %}
                                         <div>
                                             <img class="w-75" src="{{ MEDIA_URL }}extras_images/watches_clocks_coming_soon_banner_350.webp" alt="{{ product.name }} Coming soon - image">
                                             <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-orange">Discover More</a>
                                         </div>
+                                        {% else %}
+                                        <div>
+                                            <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-2 bg-warning">Buy Now</a>
+                                        </div>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>
