@@ -21,8 +21,12 @@
         <div class="col">
             <hr>
             <h2 class="logo-font mb-4">Thank You</h2>
+            {% if user.username %}
             <h5 class="text-uppercase text-muted"><i class="fas fa-user fa-lg interactive-color"></i> {{ user }}</h5>
-                <hr>
+            <hr>
+            {% else %}
+            <h5 class="text-uppercase text-muted"><i class="fas fa-user fa-lg interactive-color"></i> Guest</h5>
+            {% endif %}
                 <p class="text-black">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
             </div>
         </div>
@@ -183,7 +187,7 @@
 
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <p class="mb-0 text-black font-weight-bold">€Grand Total</p>
+                            <p class="mb-0 text-black font-weight-bold">€ Grand Total</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
                             <p class="mb-0">€{{ order.grand_total }}</p>
