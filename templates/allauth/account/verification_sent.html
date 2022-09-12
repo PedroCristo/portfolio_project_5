@@ -4,10 +4,25 @@
 
 {% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
 
-{% block content %}
-
-<div class="log-container">
-    <h1>{% trans "Verify Your E-mail Address" %}</h1>
-    <p>{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. Please contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
+{% block page_header %}
+<!-- BLOCK PAGE HEADER -->
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+    <!-- END OF BLOCK PAGE HEADER -->
 {% endblock %}
+
+{% block content %}
+<!-- VERIFICATION EMAIL SECTION -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="mb-4">{% trans "Verify Your E-mail Box" %}</h3>
+            <p>{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. Please contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
+        </div>
+    </div>
 </div>
+<!-- END OF VERIFICATION EMAIL SECTION -->
+{% endblock %}
