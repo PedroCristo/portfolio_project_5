@@ -141,15 +141,14 @@
     </div>
 </div>
 <!-- END OF PRODUCT DETAILS SECTION -->
-{% endblock %}
 
 <!-- PRODUCTS ON SALE CAROUSEL -->
 {% include "includes/products_sales.html" %}
 <!-- END OF PRODUCTS ON SALE CAROUSEL -->
+{% endblock %}
 
 <!-- QUANTITY INPUT SCRIPT -->
 {% block postloadjs %}
-{{ block.super }}
 {% include 'includes/quantity_input_script.html' %}
 {% endblock %}
 <!-- END OF QUANTITY INPUT SCRIPT -->
