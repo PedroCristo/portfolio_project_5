@@ -626,7 +626,7 @@ input[name='q']::placeholder {
     /* text-info */
 }
 
-/* Product Form */
+/* Image field Form */
 .btn-file {
     position: relative;
     overflow: hidden;
