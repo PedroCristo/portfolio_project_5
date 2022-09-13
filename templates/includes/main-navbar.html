@@ -18,15 +18,15 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Watches
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=Smart Watch" class="dropdown-item">Smart Watches</a>
+                <a href="{% url 'products' %}?category=Smart%20Watch" class="dropdown-item">Smart Watches</a>
                 <a href="{% url 'products' %}?category=Classic" class="dropdown-item">Classic Watches</a>
                 <a href="{% url 'products' %}?category=Automatic" class="dropdown-item">Automatic Watches</a>
-                <a href="{% url 'products' %}?category=Wall Clock" class="dropdown-item">Wall Clocks</a>
-                <a href="{% url 'products' %}?category=Smart Watch,Classic,Automatic,Wall Clock" class="dropdown-item">All Watches</a>
+                <a href="{% url 'products' %}?category=Wall%20Clock" class="dropdown-item">Wall Clocks</a>
+                <a href="{% url 'products' %}?category=Smart%20Watch,Classic,Automatic,Wall%20Clock" class="dropdown-item">All Watches</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -47,9 +47,9 @@
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="{% url 'products' %}?product_status=New" class="dropdown-item">New Arrivals</a>
                 <a href="{% url 'products' %}?product_status=Sales" class="dropdown-item">Sales</a>
-                <a href="{% url 'products' %}?product_status=Coming Soon" class="dropdown-item">Coming Soon</a>
+                <a href="{% url 'products' %}?product_status=Coming%20Soon" class="dropdown-item">Coming Soon</a>
                 <a href="{% url 'products' %}?product_status=Clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?product_status=New,Sales,Coming Soon,Clearance" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?product_status=New,Sales,Coming%20Soon,Clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
         <li class="nav-item dropdown">
