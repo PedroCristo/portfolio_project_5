@@ -1,5 +1,4 @@
-
-<!-- WIDGET TO SHOW A SMALL IMAGE SELECTED -->
+<!-- IMAGE WIDGET SECTION -->
 {% if widget.is_initial %}
     <p>{{ widget.initial_text }}:</p>
     <a href="{{ widget.value.url }}">
@@ -17,4 +16,4 @@
     Select Image <input id="new-image" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
 </span>
 <strong><p class="text-danger" id="filename"></p></strong>
-<!-- WIDGET TO SHOW A SMALL IMAGE SELECTED -->
+<!-- END OF IMAGE WIDGET SECTION -->
