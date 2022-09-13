@@ -1,4 +1,6 @@
 {% load static %}
+
+{% block content %}
 <!-- FOOTER -->
 <footer id="footer" class="mt-5">
    <div class="container-xl">
@@ -10,7 +12,7 @@
             <ul>
                <li><a href="https://www.facebook.com" rel="noopener" target="_blank"
                   aria-label="Go to the facebook company page"><i class="fab fa-facebook-f interactive-color"></i> Facebook</a></li>
-               <li><a href="https://twitter.com/" rel="noopener" target="_blank"
+                  <li><a href="https://twitter.com/" rel="noopener" target="_blank"
                   aria-label="Go to the Instagram company page"><i class="fab fa-instagram interactive-color"></i> Instagram</a></li>
             </ul>
          </div>
@@ -68,6 +70,6 @@
          <p><i class="far fa-copyright interactive-color"></i> All Rights Reserved | Watches & Clocks | <span id="year"></span></p>
       </div>
    </div>
-   </div>
 </footer>
-<!-- ENF OF FOOTER -->
+<!-- END OF FOOTER -->
+{% endblock %}

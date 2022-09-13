@@ -8,7 +8,7 @@
             <div class="col"></div>
         </div>
     </div>
-    <!-- END OF BLOCK PAGE HEADER -->
+<!-- END OF BLOCK PAGE HEADER -->
 {% endblock %}
 
 {% block content %}
@@ -141,16 +141,12 @@
     </div>
 </div>
 <!-- END OF PRODUCT DETAILS SECTION -->
+{% endblock %}
 
 <!-- PRODUCTS ON SALE CAROUSEL -->
 {% include "includes/products_sales.html" %}
 <!-- END OF PRODUCTS ON SALE CAROUSEL -->
-{% endblock %}
 
-{% block postloadjs %}
-
-{{ block.super }}
 <!-- QUANTITY INPUT SCRIPT -->
 {% include 'includes/quantity_input_script.html' %}
 <!-- END OF QUANTITY INPUT SCRIPT -->
-{% endblock %}
