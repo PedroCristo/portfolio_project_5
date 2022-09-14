@@ -147,8 +147,10 @@
 <!-- END OF PRODUCTS ON SALE CAROUSEL -->
 {% endblock %}
 
-<!-- QUANTITY INPUT SCRIPT -->
 {% block postloadjs %}
+
+{{ block.super }}
+<!-- QUANTITY INPUT SCRIPT -->
 {% include 'includes/quantity_input_script.html' %}
-{% endblock %}
 <!-- END OF QUANTITY INPUT SCRIPT -->
+{% endblock %}
