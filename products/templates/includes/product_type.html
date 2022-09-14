@@ -6,17 +6,17 @@
     <div class="col text-center mt-3">
         <h2 class="sub-title">Products</h2>
         {% for current in current_categories %}
-            <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ current.name }}">
+            <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ current.name | urlencode }}">
                 <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ current.friendly_name }}</span>
             </a>
         {% endfor %}
         {% for current in current_gender_category %}
-            <a class="category-badge text-decoration-none" href="{% url 'products' %}?gender_category={{ current.name }}">
+            <a class="category-badge text-decoration-none" href="{% url 'products' %}?gender_category={{ current.name | urlencode }}">
                 <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ current.friendly_name }}</span>
             </a>
         {% endfor %}
         {% for current in current_product_status %}
-            <a class="category-badge text-decoration-none" href="{% url 'products' %}?product_status={{ current.name }}">
+            <a class="category-badge text-decoration-none" href="{% url 'products' %}?product_status={{ current.name | urlencode }}">
                 <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ current.friendly_name }}</span>
             </a>
         {% endfor %}
