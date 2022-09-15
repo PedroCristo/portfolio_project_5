@@ -77,7 +77,8 @@
                               <i class="fa regular fa-clock interactive-color"></i> {{ product.category.friendly_name }}
                               </a>
                            </p>
-                           {% endif %}{% if product.gender_category %}
+                           {% endif %}
+                           {% if product.gender_category %}
                            <p class="small mt-1 mb-0">
                               <a href="{% url 'products' %}?gender_category={{ product.gender_category | urlencode }}" aria-label="Go to the gender category page" class="text-muted">
                               <i class="fas fa-tag mr-1 interactive-color"></i> {{ product.gender_category }}
