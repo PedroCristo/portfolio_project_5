@@ -55,7 +55,7 @@
             {% else %}
             <small class="text-muted">No Rating</small>
             {% endif %}
-            <p class="mt-3">{{ product.description | safe }}</p>
+            <div class="mt-3">{{ product.description | safe }}</div>
             <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                {% csrf_token %}
                <div class="form-row">
@@ -131,11 +131,11 @@
       <div class="row text-justify">
          <div class="col-12">
             <h2 class="sub-title">Features：</h2>
-            <p class="mt-3">{{ product.features | safe }}</p>
+            <div class="mt-3">{{ product.features | safe }}</div>
          </div>
          <div class="col-12">
             <h2 class="sub-title">Watch Details：</h2>
-            <p class="mt-3">{{ product.watch_details | safe }}</p>
+            <div class="mt-3">{{ product.watch_details | safe }}</div>
          </div>
       </div>
    </div>
