@@ -42,7 +42,7 @@
                 {% for item in bag_items %}
                     <div class="row">
                         <div class="col-2 mb-1">
-                            <a href="{% url 'product_detail' item.product.id %}">
+                            <a href="{% url 'product_detail' item.product.id %}" aria-label="Go to the product details page">
                                 {% if item.product.image %}
                                     <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
                                 {% else %}
@@ -98,8 +98,9 @@
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 							{% else %}
 								<label class="form-check-label" for="id-save-info">
-                                    <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
-                                    <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                                    <a class="text-info" 
+                                    ="{% url 'account_signup' %}"  aria-label="Go to the account signup page">Create an account</a> or 
+                                    <a href="{% url 'account_login' %}" aria-label="Go to the account login page" class="text-info" >login</a> to save this information
                                 </label>
 							{% endif %}
 						</div>
@@ -116,7 +117,7 @@
                     </fieldset>
 
                     <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0 btn-products">
+						<a href="{% url 'view_bag' %}" aria-label="Go to the view bag page" class="btn btn-outline-black rounded-0 btn-products">
 							<span class="icon">
 								<i class="fas fa-chevron-left interactive-color"></i>
 							</span>

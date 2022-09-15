@@ -1,6 +1,7 @@
 <!-- HEAD HTML -->
 {% include "includes/head.html" %}
 <!-- END OF HEAD HTML -->
+
 <!-- BASE HTML  -->
 <body id="top">
    <header class="container-fluid fixed-top topnav">
@@ -106,17 +107,21 @@
    </div>
    <!-- END OF TOASTS ALERT MESSAGES -->
    {% endif %}
+
    {% block page_header %}
    {% endblock %}
    <!-- END OF BASE HTML  -->
    {% block content %}
+
    {% endblock %}
    <!-- FOOTER -->
    {% include "includes/footer.html" %}
    <!-- END OF FOOTER -->
+
    <!-- SCRIPTS -->
    {% include "includes/scripts.html" %}
    <!-- END OF SCRIPTS -->
+   
    {% block postloadjs %}
    <script>
       // Show alert toasts on the top
