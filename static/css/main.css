@@ -931,9 +931,9 @@ input[name='q']::placeholder {
         width: 255px;
     }
 
-    #footer .copyright .far {
+    #footer .copyright .fa-copyright {
         font-size: 0.8rem !important;
-        margin-left: -5px !important;
+        margin-right: 3px !important;
     }
 
     #mc_embed_signup {
