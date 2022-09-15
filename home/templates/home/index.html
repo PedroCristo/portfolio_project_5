@@ -5,33 +5,33 @@
 <!-- END OF HEAD HTML -->
 
 {% block content %}
-<!-- HOME INTRODUCTION -->
+<!-- LANDING PAGE -->
 <main id="intro-section">
-    <video class="display-desktop" src="{{ MEDIA_URL }}video/watches_clocks_video_bg_compressed_desktop_1920x1080.mp4" muted loop autoplay></video>
-    <video class="display-mobile" src="{{ MEDIA_URL }}video/watches_clocks_video_bg_compressed_mobile_2_640x360.mp4" muted loop autoplay></video>
-    <header>
-        <a href="{% url 'home' %}" aria-label="Home Page"><span class="logo interactive-color">Watches & Clocks</span></a>
-    </header>
-    <div class="overlay"></div>
-    <div class="text-box">
-        <h3>THE NEW COLLECTIONS ARE HERE</h3>
-        <p>Discover how to find the best watch and enjoy exclusive products
-        </p>
-        <a href="{% url 'home' %}" class="btn-intro" aria-label="Go to the home page">Shop Now <i
-                class="fas fa-arrow-right interactive-color"></i></a>
-    </div>
-    <div class="social">
-        <ul>
-            <li>
-                <a href="https://www.facebook.com" rel="noopener" target="_blank"
-                    aria-label="Go to the facebook company page"><i class="fab fa-facebook-f interactive-color"></i></a>
-                <a href="https://twitter.com/" rel="noopener" target="_blank"
-                    aria-label="Go to the Instagram company page"><i class="fab fa-instagram interactive-color"></i></a>
-            </li>
-        </ul>
-    </div>
+   <video class="display-desktop" src="{{ MEDIA_URL }}video/watches_clocks_video_bg_compressed_desktop_1920x1080.mp4" muted loop autoplay></video>
+   <video class="display-mobile" src="{{ MEDIA_URL }}video/watches_clocks_video_bg_compressed_mobile_2_640x360.mp4" muted loop autoplay></video>
+   <header>
+      <a href="{% url 'home' %}" aria-label="Home Page"><span class="logo interactive-color">Watches & Clocks</span></a>
+   </header>
+   <div class="overlay"></div>
+   <div class="text-box">
+      <h3>THE NEW COLLECTIONS ARE HERE</h3>
+      <p>Discover how to find the best watch and enjoy exclusive products
+      </p>
+      <a href="{% url 'home' %}" class="btn-intro" aria-label="Go to the home page">Shop Now <i
+         class="fas fa-arrow-right interactive-color"></i></a>
+   </div>
+   <div class="social">
+      <ul>
+         <li>
+            <a href="https://www.facebook.com" rel="noopener" target="_blank"
+               aria-label="Go to the facebook company page"><i class="fab fa-facebook-f interactive-color"></i></a>
+            <a href="https://twitter.com/" rel="noopener" target="_blank"
+               aria-label="Go to the Instagram company page"><i class="fab fa-instagram interactive-color"></i></a>
+         </li>
+      </ul>
+   </div>
 </main>
-<!-- END OF HOME INTRODUCTION -->
+<!-- END OF LANDING PAGE-->
 {% endblock %}
 
 <!-- SCRIPTS -->
