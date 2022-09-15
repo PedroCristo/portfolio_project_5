@@ -12,19 +12,16 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <!-- STRIPE -->
 <script src="https://js.stripe.com/v3/"></script>
+
 <script>
-    // Settimeout to dismiss the toast alert box
-    $(function () {
-        setTimeout(function () {
-            if ($(".toast").is(":visible")) {
+// Settimeout to dismiss the toast alert box
+$(function () {
+    setTimeout(function () {
+        if ($(".toast").is(":visible")) {
                 $(".toast").fadeOut();
             }
-        }, 4000);
-    });
-</script>
-<script>
-    // Show alert toasts on the top
-    $('.toast').toast('show');
+    }, 4000);
+});
 </script>
 {% endblock %}
 </body>
