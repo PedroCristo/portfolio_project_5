@@ -880,6 +880,15 @@ input[name='q']::placeholder {
         font-size: 1.5rem;
     }
 
+    #footer .copyright .fa-copyright {
+        font-size: 0.8rem !important;
+        margin-right: 3px !important;
+    }
+
+    #footer .copyright p {
+        width: 300px;
+    }
+
     #page-404 p {
         font-size: 1.8rem;
     }
@@ -908,6 +917,11 @@ input[name='q']::placeholder {
     .sub-title {
         font-size: 1.5rem;
     }
+
+    #footer .copyright .fa-copyright {
+        font-size: 0.8rem !important;
+        margin-right: 3px !important;
+    }
 }
 
 @media only screen and (max-width: 333px) {
@@ -929,11 +943,6 @@ input[name='q']::placeholder {
 
     #footer p {
         width: 255px;
-    }
-
-    #footer .copyright .fa-copyright {
-        font-size: 0.8rem !important;
-        margin-right: 3px !important;
     }
 
     #mc_embed_signup {
