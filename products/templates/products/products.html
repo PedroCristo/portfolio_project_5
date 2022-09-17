@@ -104,13 +104,12 @@
                            {% if request.user.is_superuser %}
                            <hr>
                            <div class="text-center mt-3">
-                              <a href="{% url 'edit_product' product.id %}" aria-label="Go to the edit product page" class="btn-edit btn-sm btn-secondary mb-3"
-                                 aria-label="Go to the Edit Product Page">Edit</a>
+                              <a href="{% url 'edit_product' product.id %}" aria-label="Go to the edit product page" class="btn-edit btn-sm btn-secondary mb-3">Edit</a>
                               <button type="button" class="btn-sm btn-danger mb-3" data-bs-toggle="modal"
-                                 data-bs-target="#delete-product">Delete</button>
+                                 data-bs-target="#delete-product{{ product.id }}">Delete</button>
                            </div>
                            <!-- Delete product bootstrap modal-->
-                           <div class="modal fade" id="delete-product" tabindex="-1" aria-hidden="true">
+                           <div class="modal fade" id="delete-product{{ product.id }}" tabindex="-1" aria-hidden="true">
                               <div class="modal-dialog">
                                  <div class="modal-content">
                                     <div class="modal-header">
@@ -122,8 +121,7 @@
                                     <div class="modal-footer">
                                        <button type="button" class="btn btn-secondary"
                                           data-bs-dismiss="modal">Close</button>
-                                       <a href="{% url 'delete_product' product.id %}" aria-label="Delete product" class="btn btn-danger"
-                                          aria-label="Delete Product">Delete</a>
+                                       <a href="{% url 'delete_product' product.id %}" aria-label="Delete product" class="btn btn-danger">Delete</a>
                                     </div>
                                  </div>
                               </div>
