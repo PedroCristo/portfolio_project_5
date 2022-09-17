@@ -37,7 +37,7 @@ body {
     --fully-black: rgb(17, 17, 17);
     --light-grey: rgb(224, 218, 218);
     --white: rgb(255, 255, 255);
-    --orange: rgb(236, 170, 115);
+    --yellow: rgb(255, 193, 7);
     --red: rgb(220, 53, 69);
 
     /* font Color */
@@ -59,7 +59,7 @@ i {
 }
 
 .fa-star {
-    color: #ffc107;
+    color: var(--yellow);
 }
 
 .sub-title {
@@ -531,7 +531,6 @@ input[name='q']::placeholder {
     right: 36px;
 }
 
-/* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
     border-bottom-color: #007bff !important;
 }
@@ -549,7 +548,7 @@ input[name='q']::placeholder {
 }
 
 .arrow-warning {
-    border-bottom-color: #ffc107 !important;
+    border-bottom-color: var(--yellow) !important;
 }
 
 .arrow-info {
