@@ -12,13 +12,11 @@ class Reviews(models.Model):
     name = models.CharField(max_length=20)
     image = models.ImageField(upload_to='reviews_images/', null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
-    product_review = models.TextField(max_length=300)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
-    service_review = models.TextField(null=True, max_length=100)
+    service_review = models.TextField(null=True, max_length=300)
     service_rating = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True)
     approved = models.BooleanField(default=False)
+    carousel_review = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name

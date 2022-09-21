@@ -9,7 +9,7 @@ class ReviewsAdmin(admin.ModelAdmin):
         'review_title',
         'timestamp',
         'service_review',
-        'rating',
         'service_rating',
         'approved',
+        'carousel_review',
     )
