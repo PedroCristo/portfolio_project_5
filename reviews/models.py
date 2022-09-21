@@ -12,7 +12,7 @@ class Reviews(models.Model):
     name = models.CharField(max_length=20)
     image = models.ImageField(upload_to='reviews_images/', null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
-    service_review = models.TextField(null=True, max_length=300)
+    service_review = models.TextField(null=True, max_length=400)
     service_rating = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True)
     approved = models.BooleanField(default=False)
