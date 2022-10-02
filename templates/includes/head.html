@@ -44,29 +44,28 @@
     <!-- BOOTSTRAP BUNDLE WITH POPPER-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- META PIXEL -->
+    <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '500695501583616');
+            fbq('track', 'PageView');
+            fbq('track', 'Lead');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=500695501583616&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- END OF META PIXEL -->
     {% endblock %}
 
     <!-- FAVICON IMAGE -->
     <link rel="icon" type="image/x-icon" href="{{ MEDIA_URL }}extras_images/watches_and_clocks_favicon.webp">
      <!-- SITE TITLE -->
     <title>Watches & Clocks {% block extra_title %}{% endblock %}</title>
-    <!-- META PIXEL -->
-    {% block extra_js %}
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '500695501583616');
-    fbq('track', 'PageView');
-    fbq('track', 'Lead');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=500695501583616&ev=PageView&noscript=1"/></noscript>
-    {% endblock %}
-<!-- END OF META PIXEL -->
 </head>
