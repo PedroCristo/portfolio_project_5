@@ -155,3 +155,15 @@ All functionality and development of this project were managed using GitHub whic
 - To provide tools that allow users to search for products.
 - To provide users with an easy and safe way to buy their products.
 
+## Design
+
+#### Colours
+
+![Colours Palete](./assets/readme/extras/watches_clocks_color_palete.png)<br>
+
+- The colour scheme is kept simple by opting for a combination of white text set against the image
+  background and black text set against the white background. The navbar was set on a white background
+  and a light grey on the bottom. The interactive colour is used for icons and the website logo.
+  Yellow is used for the "Buy Now" buttons and red is used to the "Discover More" buttons. The Dark grey was used for the
+  website footer. This contrasts with the rest of the website.
+
