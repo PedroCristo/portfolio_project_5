@@ -187,3 +187,7 @@ All functionality and development of this project were managed using GitHub whic
 
 Wireframes for this project are located [here](WIREFRAMES.md)
 
+## Database Diagram
+
+![Database Diagrama](./assets/readme/extras/watches_clocks_database_diagram.jpg)<br>
+
