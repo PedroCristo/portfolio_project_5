@@ -86,7 +86,7 @@ i {
     background-color: var(--iterative-color) !important;
 }
 
-.bg-orange {
+.btn-discover{
     background-color: var(--red) !important;
 }
 
@@ -757,6 +757,10 @@ input[name='q']::placeholder {
 @media only screen and (min-width: 1200px) {
     .container {
         max-width: 80%;
+    }
+
+    .btn-discover {
+        width: 140px;
     }
 }
 
