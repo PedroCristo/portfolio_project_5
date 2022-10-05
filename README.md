@@ -145,3 +145,13 @@ README Table Content
 All functionality and development of this project were managed using GitHub which Projects can be found
 [here](https://github.com/PedroCristo/portfolio_project_5/issues)
 
+### The Scope
+
+#### Main Site Goals
+
+- To provide users with a good website experience with watches and clocks on display.
+- To provide users with a visually pleasing website that is intuitive and easy to navigate.
+- To provide a website with a clear purpose.
+- To provide tools that allow users to search for products.
+- To provide users with an easy and safe way to buy their products.
+
