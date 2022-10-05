@@ -53,58 +53,6 @@ README Table Content
     - [Reset Password Page](#reset-password-page)
     - [Change Password Page](#change-password-page)
     - [Navbar](#navbar)
-    - [Footer](#footer)
-    - [Page 404 - Page Not Found](#page-404---page-not-found)
-  - [Messages and Interaction With Users](#messages-and-interaction-with-users)
-    - [Sign up 1](#sign-up-1)
-    - [Sign up 2](#sign-up-2)
-    - [Login](#login)
-    - [Logout](#logout)
-    - [Profile Update](#profile-update)
-    - [Service Review - Add Review](#service-review---add-review)
-    - [Service Review - Update Review 1](#service-review---update-review-1)
-    - [Service Review - Update Review 2](#service-review---update-review-2)
-    - [Service Review - Delete Review 1](#service-review---delete-review-1)
-    - [Service Review - Delete Review 2](#service-review---delete-review-2)
-    - [Service Review - Delete Review 3](#service-review---delete-review-3)
-    - [Add Product](#add-product)
-    - [Edit Product 1](#edit-product-1)
-    - [Edit Product 2](#edit-product-2)
-    - [Edit Product 3](#edit-product-3)
-    - [Delete Product 1](#delete-product-1)
-    - [Delete Product 2](#delete-product-2)
-    - [Delete Product 3](#delete-product-3)
-    - [Add Product to Bag](#add-product-to-bag)
-    - [Update Bag](#update-bag)
-    - [Remove Product from Bag](#remove-product-from-bag)
-    - [Purchase Success](#purchase-success)
-    - [Purchase Success - Confirmation Email](#purchase-success---confirmation-email)
-  - [Admin Panel / Superuser](#admin-panel--superuser)
-  - [Marketing and Social Media](#marketing-and-social-media)
-    - [Statista - Facebook Users](#statista---facebook-users)
-    - [Watches \& Clocks - Facebook Page](#watches--clocks---facebook-page)
-    - [Meta Pixel - Tracking Audience](#meta-pixel---tracking-audience)
-    - [Mailchimp Subscription Service](#mailchimp-subscription-service)
-  - [Privacy Policy](#privacy-policy)
-  - [Search Engine Optimization](#search-engine-optimization)
-    - [sitemap.xml](#sitemapxml)
-    - [robots.txt](#robotstxt)
-    - [Sitemap Google Registration](#sitemap-google-registration)
-  - [Stripe Payments](#stripe-payments)
-  - [Technologies Used](#technologies-used)
-    - [Languages Used](#languages-used)
-      - [Django Packages](#django-packages)
-    - [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
-    - [Testing](#testing)
-  - [Creating the Django app](#creating-the-django-app)
-  - [Deployment of This Project](#deployment-of-this-project)
-  - [Final Deployment](#final-deployment)
-  - [Forking This Project](#forking-this-project)
-  - [Cloning This Project](#cloning-this-project)
-  - [Credits](#credits)
-    - [Content](#content)
-    - [Information Sources / Resources](#information-sources--resources)
-  - [Special Thanks](#special-thanks)
 
 ## User Experience - UX
 
@@ -190,4 +138,181 @@ Wireframes for this project are located [here](WIREFRAMES.md)
 ## Database Diagram
 
 ![Database Diagrama](./assets/readme/extras/watches_clocks_database_diagram.jpg)<br>
+
+## Features
+
+### Landing Page
+
+![Landing page](./assets/readme/features/watches_clocks_landing_page.jpg)
+
+- The Landing page works as the website cover. Users will see a background video playing in a loop, a slogan text about
+  the available collection, and two social media buttons. There is also a button to go to the website's Home Page.<br>
+
+### Home Page - Images Carousel
+
+![Home Page - Images Carousel](./assets/readme/features/watches_clocks_home_page_carousel.jpg)
+
+- The home page is equipped with a 3 images carousel on the
+  top. Users will see 3 Watches & Clocks shop banners advertising products and services.<br>
+
+### Home Page - Selected Products
+
+![Home Page - Selected Products](./assets/readme/features/watches_clocks_home_page_selected_products.jpg)
+
+- In this feature, users will see a variety of products selected by the website admin. It can be used to highlight special
+  or popular products. The website admin can choose the displayed products by selecting a product in
+  the admin panel or from the website front-end by clicking on the featured box.<br>
+
+### Home Page - Image Banner
+
+![Home Page - Image Banner](./assets/readme/features/watches_clocks_home_page_banner.jpg)
+
+- This banner feature is used to advertise new or popular products on the website. The website admin can upload many
+  of images through the admin panel and choose the one to be displayed by clicking on the banner featured box. It allows
+  the admin to change the banner easily depending on what will be better to be displayed at a certain moment.<br>
+
+### Home Page - Customers Reviews Carousel
+
+![Home Page - Customers Reviews Carousel](./assets/readme/features/watches_clocks_home_page_reviews.jpg)
+
+- In this feature, users can see a list of website service reviews written by other users.
+  The website admin can choose which reviews are displayed on this carousel by clicking the
+  Carousel Review box in the admin panel.<br>
+
+### Products Page
+
+![Products Page](./assets/readme/features/watches_clocks_products_page.jpg)
+
+- On this page, users will see all the products available on thewebsite such as product details. For example,
+  if the user is interested in the watch they can press the button "Buy Now". They can also sort products by price,
+  name, rating and category. Furthermore, when the site admin is logged in, it can edit or delete products.<br>
+
+### Products Details
+
+![Product Details ](./assets/readme/features/watches_clocks_products_details.jpg)
+
+- This feature is at the top of the Product Details Page. Here users can see the product image and product
+  information such as price, category, gendercategory and rating. If the user is interested in the watch they can 
+  choose the product size, product quantity and add the product to their shopping bag. Also, the user can leave the 
+  page by pressing the button "Keep Shopping".
+
+### Products Details - Features
+
+![Product Details - Features](./assets/readme/features/watches_clocks_products_details_features.jpg)
+
+- Scrolling down, the user will have access to the full product details such as watch features and watch details.<br>
+
+### Products Details - Products on Sale
+
+![Product Details - Products on Sale](./assets/readme/features/watches_clocks_products_on_sale.jpg)
+
+- In this feature users, can see a selection of products on sale. The sale items are chosen by the website admin by adding an old price and
+changing the product status to sale. This is completed through the admin panel or from the website front-end.<br>
+
+### Products Shopping Bag
+
+![Products Shopping Bag](./assets/readme/features/watches_clocks_bag_page.jpg)
+
+- TThis feature is called the Shopping bag. Here, users can add products and quantities. Check the total price, and delivery costs and go 
+to the secure checkout to finish the order. Before secure checkout. the user can also change the quantity and remove unwanted products. The
+user can also leave this page by pressing the button "Keep Shopping".<br>
+
+### Products Shopping Bag - Products Coming Soon
+
+![Products Shopping Bag - Products Coming Soon](./assets/readme/features/watches_clocks_products_coming_soon.jpg)
+
+- Scrolling down users can see a carousel displaying a selection of Coming Soon products that will be available for future
+purchase. The website admin can add products to this list by clicking the Coming Soon box in the admin panel or from the website front-end.<br>
+
+### Products Checkout
+
+![Products Checkout](./assets/readme/features/watches_clocks_checkout_page.jpg)
+
+- On the checkout page, users will have to fill out the form and add the credit/debit card details to finish the purchase.<br>
+
+### Products Checkout - Success
+
+![Products Checkout - Success](./assets/readme/features/watches_clocks_checkout_success_page.jpg)
+
+- On the checkout page, users will have to fill out the form and add their credit/debit card details to finish the purchase.<br>
+
+### Products Management
+
+![Products Management](./assets/readme/features/watches_clocks_products_management.jpg)
+
+- When the website admin is logged in on this page, they can add a new product to the website without going to the admin panel.<br>
+
+### Profile Page
+
+![Profile Page](./assets/readme/features/watches_clocks_profile_page.jpg)
+
+- On this page a logged in user (with a valid registration account) can add or edit their own personal details and also check previous orders.<br>
+
+#### Service Reviews Page
+
+![Services Reviews Page](./assets/readme/features/watches_clocks_service_review_page.jpg)
+
+- On this feature, users can see website service reviews written by other users or their own reviews if they have submitted a review before.<br>
+
+#### Add/Edit Service Review Page
+
+![Add/Edit Service Review Page](./assets/readme/features/watches_clocks_add_edit_review_page.jpg)
+
+- On this page a user with a valid registration account and logged in can add or edit their own personal service reviews.<br>
+
+### Signup Page
+
+![Signup Page](./assets/readme/features/watches_clocks_sign_up_page.jpg)
+
+- After submitting the Signup form, the user will be redirected to this page, advising them to check the link sent to their email box.<br>
+
+### Signup Page - Verify Email
+
+![Signup Page - Verify Email](./assets/readme/features/watches_clocks_verify_email_page.jpg)
+
+- TAfter submitting the Signup form, the user will be redirected to this page, advising them to check the link sent to their email box.<br>
+
+### Signup Page - Confirm Email
+
+![Signup Page - Confirm Email](./assets/readme/features/watches_clocks_confirm_email_page.jpg)
+
+- Once the user clicks on the link sent to their email box, it will redirect the user to this page which confirms their email.<br>
+
+### Login Page
+
+![Login Page](./assets/readme/features/watches_clocks_login_page.jpg)
+
+- On the Login Page, users can log in to the website by inputting their username and password. The user is now
+registered and will have access to the Registered User website services.<br>
+
+### Logout Page
+
+![Logout Page](./assets/readme/features/watches_clocks_logout_page.jpg)
+
+- On the Logout Page, users can confirm that they wish to exit the website.<br>
+
+### Reset Password Page
+
+![Reset Password Page](./assets/readme/features/watches_clocks_pass_reset_page.jpg)
+
+- Users can use this page to reset their login password. The user adds their email address in the input field and clicks on the button "Reset Password".<br>
+
+### Change Password Page
+
+![Change Password Page](./assets/readme/features/watches_clocks_pass_change_page.jpg)
+
+- Users will get a link to reset their password and after clicking on the link it will redirect the user to this page where they can set a new password.<br>
+
+### Navbar
+
+![Navbar](./assets/readme/features/watches_clocks_responsive_navbar.jpg)
+
+- The navigation bar is present at the top of every page and houses all links to the various other pages.
+- The links at the bottom of the navbar are dropdown menus. They are used to filter products such as all products, types of watches, gender and special offers.
+- Is available also a link to go to the Home Page and another one for more options.
+- The options to Register or Log in will change to the option to log out once a user has logged in.
+- Once a user has signed in, more options such as profile or add review will be available in the navbar.
+- A search box is nested in also in the navbar.
+- The navbar is fully responsive, collapsing into a hamburger menu when the screen size becomes smaller.
+- A link is also available to go to the Home Page and another link is available for More Options.<br>
 
