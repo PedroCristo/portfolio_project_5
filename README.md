@@ -167,3 +167,18 @@ All functionality and development of this project were managed using GitHub whic
   Yellow is used for the "Buy Now" buttons and red is used to the "Discover More" buttons. The Dark grey was used for the
   website footer. This contrasts with the rest of the website.
 
+#### Typography
+
+- The Montserrat font is used as the main font for the whole project. The Kaushan font is used to
+  display the website logo.
+
+#### Imagery
+
+- All the images were converted to webp format to improve the website performance. The product images and banners are
+  uploaded by the admin panel. The image banners are available in two different sizes. The different sizes allow for the
+  banners to be displayed on both desktop and mobile platforms.
+
+#### Video
+
+- On the landing page, 2 videos playing as a background. One video is displayed on the desktop platform whilst
+  the second video plays on the mobile platform. The two videos were both compressed to improve the website's performance.
