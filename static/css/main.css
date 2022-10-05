@@ -22,8 +22,8 @@
     -webkit-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
     -webkit-transition: all ease0.3s;
-    -o-transition: all ease0.3s;
-    transition: all ease0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
 
 body {
@@ -528,7 +528,7 @@ input[name='q']::placeholder {
 .trust-company-top {
     display: none;
     width: 150px !important;
-    margin: o auto;
+    margin: 0 auto;
 }
 
 #footer .copyright {
@@ -755,7 +755,7 @@ input[name='q']::placeholder {
 *                              *
 *******************************/
 
-@media only scren and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .container {
         max-width: 80%;
     }
