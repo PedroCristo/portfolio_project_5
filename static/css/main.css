@@ -9,6 +9,7 @@
 /* Kaushan */
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+
 /*******************************
 *                              *
 *        GENERAL STYLES        *
@@ -73,7 +74,7 @@ i {
 .line-through {
     text-decoration: line-through !important;
     -webkit-text-decoration-color: var(--red) !important;
-            text-decoration-color: var(--red) !important;
+    text-decoration-color: var(--red) !important;
 }
 
 .interactive-color {
@@ -104,12 +105,10 @@ i {
 .btt-button {
     display: none;
     z-index: 100;
-
 }
 
 .btt-button.back-top-active {
     display: block;
-
 }
 
 .owl-prev,
@@ -166,11 +165,11 @@ i {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     background: var(--overlay-black);
     color: var(--text-white);
     overflow: hidden;
@@ -257,11 +256,11 @@ i {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     z-index: 5;
 }
 
@@ -314,7 +313,6 @@ i {
     color: var(--light-grey) !important;
 }
 
-
 /*******************************
 *                              *
 *         HOME PAGE            *
@@ -322,14 +320,14 @@ i {
 *******************************/
 .icon {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
 }
@@ -520,11 +518,11 @@ input[name='q']::placeholder {
     display: flex;
     text-align: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .trust-company-top {
@@ -537,13 +535,6 @@ input[name='q']::placeholder {
     padding: 5px;
     font-size: clamp(0.7rem, 2.5vw, 0.9rem);
 }
-
-/*******************************
-*                              *
-*       PRODUCTS PAGE          *
-*                              *
-*******************************/
-
 
 /*******************************
 *                              *
@@ -614,7 +605,6 @@ input[name='q']::placeholder {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
 
 /*******************************
 *                              *
@@ -713,7 +703,6 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-
 /*******************************
 *                              *
 *       MAILCHIMP FORM        *
@@ -771,7 +760,6 @@ input[name='q']::placeholder {
         max-width: 80%;
     }
 }
-
 
 @media only screen and (max-width: 1100px) {
     #mc_embed_signup {
@@ -865,8 +853,8 @@ input[name='q']::placeholder {
     .row-reverse {
         -webkit-box-orient: vertical !important;
         -webkit-box-direction: normal !important;
-            -ms-flex-direction: column !important;
-                flex-direction: column !important;
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
     }
 
     #footer ul li,
@@ -890,7 +878,7 @@ input[name='q']::placeholder {
 @media only screen and (max-width: 768px) {
     #intro-section video {
         -o-object-position: 0px 80%;
-           object-position: 0px 80%;
+        object-position: 0px 80%;
     }
 
 }
