@@ -400,7 +400,7 @@ i {
 
 a.category-badge>span.badge:hover {
     background: #212529 !important;
-    color: #fff !important;
+    color: var(--text-white) !important;
 }
 
 .btt-button {
@@ -650,7 +650,7 @@ input[name='q']::placeholder {
     /* btn */
     display: inline-block;
     font-weight: 400;
-    color: #fff;
+    color: var(--text-white);
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
@@ -667,7 +667,7 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {
-    color: #fff;
+    color: var(--text-white);
     background-color: #222;
     border-color: #222;
 }
