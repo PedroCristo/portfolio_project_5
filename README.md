@@ -105,3 +105,43 @@ README Table Content
     - [Content](#content)
     - [Information Sources / Resources](#information-sources--resources)
   - [Special Thanks](#special-thanks)
+
+## User Experience - UX
+
+### User Stories
+
+- As a website user, I can:
+
+1. Navigate around the site and easily view the desired content.
+2. View a list of products and choose accordingly.
+3. Search products to find a specific product.
+4. Click on a product to read and view the details.
+5. Register for an account to avail of the services offered to members.
+6. View product comments so that I can read other users opinions.
+7. Buy a product by using the website checkout system.
+
+- As a logged in website user, I can:
+
+1. Review the website service.
+2. Delete my previous reviews.
+3. Save my data under my personal profile.
+4. Edit my previous reviews.
+5. Manage my profile by updating my details.
+6. Logout of the website.
+7. Using my personal profile, buy a product by using the website checkout system.
+
+- As a website Superuser, I can:
+
+1. Create and publish a new product.
+2. Create a draft of a a new product so it can be finalised later.
+3. Create a new user, products, and categories.
+4. Delete user, products, categories and reviews.
+5. Approve user's reviews.
+6. Change a user’s permissions on the website
+7. Upload new banners to be displayed on the website.
+
+### Agile Methodology
+
+All functionality and development of this project were managed using GitHub which Projects can be found
+[here](https://github.com/PedroCristo/portfolio_project_5/issues)
+
