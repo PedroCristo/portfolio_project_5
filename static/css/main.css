@@ -377,15 +377,15 @@ i {
 }
 
 .text-black {
-    color: #000 !important;
+    color: var(--text-black) !important;
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid var(--fully-black) !important;
 }
 
 .bg-black {
-    background: #000 !important;
+    background: var(--fully-black) !important;
 }
 
 .overlay {
@@ -617,7 +617,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
+    border-color: var(--fully-black);
     border-radius: 0;
 }
 
@@ -657,8 +657,8 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: var(--fully-black);
+    border: 1px solid rgb(12, 12, 12);
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
