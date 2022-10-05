@@ -19,8 +19,9 @@
     text-decoration: none !important;
     -o-transition: all ease 0.2s;
     -webkit-transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
+    -webkit-transition: all ease0.3s;
+    -o-transition: all ease0.3s;
     transition: all ease0.3s;
 }
 
@@ -71,7 +72,8 @@ i {
 
 .line-through {
     text-decoration: line-through !important;
-    text-decoration-color: var(--red) !important;
+    -webkit-text-decoration-color: var(--red) !important;
+            text-decoration-color: var(--red) !important;
 }
 
 .interactive-color {
@@ -160,9 +162,15 @@ i {
     width: 100%;
     min-height: 100vh;
     padding: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: var(--overlay-black);
     color: var(--text-white);
     overflow: hidden;
@@ -182,8 +190,10 @@ i {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: 0px 80%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0px 80%;
+       object-position: 0px 80%;
 }
 
 #intro-section .logo-mobile {
@@ -243,9 +253,15 @@ i {
     position: absolute;
     bottom: 20px;
     right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 5;
 }
 
@@ -305,14 +321,22 @@ i {
 *                              *
 *******************************/
 .icon {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
 }
 
 .main-logo-link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -395,6 +419,22 @@ a.category-badge>span.badge:hover {
     cursor: pointer;
 }
 
+input[name='q']::-webkit-input-placeholder {
+    color: #aab7c4;
+}
+
+input[name='q']::-moz-placeholder {
+    color: #aab7c4;
+}
+
+input[name='q']:-ms-input-placeholder {
+    color: #aab7c4;
+}
+
+input[name='q']::-ms-input-placeholder {
+    color: #aab7c4;
+}
+
 input[name='q']::placeholder {
     color: #aab7c4;
 }
@@ -475,10 +515,16 @@ input[name='q']::placeholder {
 }
 
 .trust-company-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .trust-company-top {
@@ -589,6 +635,22 @@ input[name='q']::placeholder {
     display: none;
 }
 
+.allauth-form-inner-content input::-webkit-input-placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content input::-moz-placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content input:-ms-input-placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content input::-ms-input-placeholder {
+    color: #aab7c4;
+}
+
 .allauth-form-inner-content input::placeholder {
     color: #aab7c4;
 }
@@ -681,6 +743,7 @@ input[name='q']::placeholder {
 *                              *
 *******************************/
 #page-404 {
+    background-image: -o-linear-gradient(40deg, rgba(0, 0, 0, .7), var(--fully-black)), url(/media/banners/watches_clocks_page_404_bg_desktop.webp);
     background-image: linear-gradient(50deg, rgba(0, 0, 0, .7), var(--fully-black)), url(/media/banners/watches_clocks_page_404_bg_desktop.webp);
     background-position: top;
     background-size: cover;
@@ -800,7 +863,10 @@ input[name='q']::placeholder {
 
 @media only screen and (max-width: 900px) {
     .row-reverse {
-        flex-direction: column !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+            -ms-flex-direction: column !important;
+                flex-direction: column !important;
     }
 
     #footer ul li,
@@ -823,7 +889,8 @@ input[name='q']::placeholder {
 
 @media only screen and (max-width: 768px) {
     #intro-section video {
-        object-position: 0px 80%;
+        -o-object-position: 0px 80%;
+           object-position: 0px 80%;
     }
 
 }
@@ -866,6 +933,7 @@ input[name='q']::placeholder {
     }
 
     #page-404 {
+        background-image: -o-linear-gradient(65deg, rgba(0, 0, 0, .7), var(--fully-black)), url(/media/banners/watches_clocks_page_404_bg_mobile.webp);
         background-image: linear-gradient(25deg, rgba(0, 0, 0, .7), var(--fully-black)), url(/media/banners/watches_clocks_page_404_bg_mobile.webp);
     }
 }
@@ -906,7 +974,8 @@ input[name='q']::placeholder {
 
 @media only screen and (max-width: 450px) {
     #intro-section video {
-        object-position: -315px 80%;
+        -o-object-position: -315px 80%;
+           object-position: -315px 80%;
     }
 
     #intro-section header {
