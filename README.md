@@ -182,3 +182,8 @@ All functionality and development of this project were managed using GitHub whic
 
 - On the landing page, 2 videos playing as a background. One video is displayed on the desktop platform whilst
   the second video plays on the mobile platform. The two videos were both compressed to improve the website's performance.
+
+### Wireframes
+
+Wireframes for this project are located [here](WIREFRAMES.md)
+
