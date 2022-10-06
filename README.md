@@ -55,6 +55,31 @@ README Table Content
     - [Navbar](#navbar)
     - [Footer](#footer)
     - [Page 404 - Page Not Found](#page-404---page-not-found)
+  - [Messages and Interaction with Users](#messages-and-interaction-with-users)
+    - [Sign up 1](#sign-up-1)
+    - [Sign up 2](#sign-up-2)
+    - [Login](#login)
+    - [Logout](#logout)
+    - [Profile Update](#profile-update)
+    - [Service Review - Add Review](#service-review---add-review)
+    - [Service Review - Update Review 1](#service-review---update-review-1)
+    - [Service Review - Update Review 2](#service-review---update-review-2)
+    - [Service Review - Delete Review 1](#service-review---delete-review-1)
+    - [Service Review - Delete Review 2](#service-review---delete-review-2)
+    - [Service Review - Delete Review 3](#service-review---delete-review-3)
+    - [Add Product](#add-product)
+    - [Edit Product 1](#edit-product-1)
+    - [Edit Product 2](#edit-product-2)
+    - [Edit Product 3](#edit-product-3)
+    - [Delete Product 1](#delete-product-1)
+    - [Delete Product 2](#delete-product-2)
+    - [Delete Product 3](#delete-product-3)
+    - [Add Product to Bag](#add-product-to-bag)
+    - [Update Bag](#update-bag)
+    - [Remove Product from Bag](#remove-product-from-bag)
+    - [Purchase Success](#purchase-success)
+    - [Purchase Success - Confirmation Email](#purchase-success---confirmation-email)
+  - [Admin Panel / Superuser](#admin-panel--superuser)
 
 ## User Experience - UX
 
@@ -330,4 +355,173 @@ registered and will have access to the Registered User website services.<br>
 ![Page 404 - Page Not Found](./assets/readme/features/watches_clocks_404_page.jpg)
 
 - The user will see this feature when the page that the user is looking for, does not exist or for any typing URL error.<br>  
+
+## Messages and Interaction with Users
+
+- Some interactive messages were added to the project to make the navigation on the website easier and to improve the
+  user's experience.
+
+### Sign up 1
+
+![Sign up 1](./assets/readme/features/interactive_messages/watches_clocks_messages_registration_alert.jpg)
+
+- When users sign up to the website they will see a message at the top right of the page saying "Confirmation sent to the sign up email address"<br>
+
+### Sign up 2
+
+![Sign up 2](./assets/readme/features/interactive_messages/watches_clocks_messages_registration_success.jpg)
+
+- The user confirms their sign up email address. Once confirmed, the user will see the following message "You have
+confirmed (email used to sign up) at the top right of the page Login.<br>
+
+### Login
+
+![Login](./assets/readme/features/interactive_messages/watches_clocks_messages_login.jpg)
+
+- WWhen users sign in to the website they will see a message "Successfully signed in as (username)" at the top right of the page.<br>
+
+### Logout
+
+![Logout](./assets/readme/features/interactive_messages/watches_clocks_messages_logout.jpg)
+
+- When users log out of the website they will see the message "You have signed out" at the top right of the page.<br>
+
+### Profile Update
+
+![Profile Update](./assets/readme/features/interactive_messages/watches_clocks_messages_profile_update.jpg)
+
+- When users update their profile they will see a message that their account has been updated at the top right of the page.<br>
+
+### Service Review - Add Review
+
+![Service Review - Add Review](./assets/readme/features/interactive_messages/watches_clocks_messages_review_sent.jpg)
+
+- WWhen users are logged in to the website they can add a service review. When they submit the review they
+will see a message "Your review was sent successfully and is awaiting approval" at the top right of the page.<br>
+
+### Service Review - Update Review 1
+
+![Service Review - Update Review 1](./assets/readme/features/interactive_messages/watches_clocks_messages_edit_button.jpg)
+
+- When users are logged in to the website and have previously posted a review they will see the "Edit"
+  button at the bottom of their reviews <br>
+
+### Service Review - Update Review 2
+
+![Service Review - Update Review 2](./assets/readme/features/interactive_messages/watches_clocks_messages_review_updated.jpg)
+
+- After the review is updated the user will see the message "The review was successfully updated" at the top right of the screen.<br>
+
+### Service Review - Delete Review 1
+
+![Service Review - Delete Review 1](./assets/readme/features/interactive_messages/watches_clocks_messages_delete_button.jpg)
+
+- When users are logged in to the website and have previously posted a review they will see the "Delete"
+  button at the bottom of their reviews.<br>
+
+### Service Review - Delete Review 2
+
+![Service Review - Delete Review 2](./assets/readme/features/interactive_messages/watches_clocks_messages_bootstrap_model_delete.jpg)
+
+- If the user wishes to delete their review, they can press the "Delete" button and a Bootstrap box model will pop up with the message "Are you sure you want to delete your review?".<br>
+
+### Service Review - Delete Review 3
+
+![Service Review - Delete Review 3](./assets/readme/features/interactive_messages/watches_clocks_messages_delete_success.jpg)
+
+- When the user presses the "Delete" button again within the Bootstrap box model they will see the message "The review was deleted successfully"
+at the top right of the page.<br>
+
+### Add Product
+
+![Add Product](./assets/readme/features/interactive_messages/watches_clocks_messages_add_product.jpg)
+
+- When the website admin is logged in, they can add new products through the website front-end. When submitted successfully 
+the following message "Successfully added product" pops up at the top right of the page.<br>
+
+### Edit Product 1
+
+![Edit Product 1](./assets/readme/features/interactive_messages/watches_clocks_messages_edit_product_button.jpg)
+
+- When the website admin is logged in, they can edit products already added through the website&#39;s front-end by clicking on the "Edit" button.<br>
+
+### Edit Product 2
+
+![Edit Product 2](./assets/readme/features/interactive_messages/watches_clocks_messages_alert_edit_product.jpg)
+
+- Once the button is clicked the website admin will see the following alert "You are editing (product name)" at the top right of the screen.<br>
+
+### Edit Product 3
+
+![Edit Product 3](./assets/readme/features/interactive_messages/watches_clocks_messages_update_product_success.jpg)
+
+- After the "Update Product" button is pressed and the product is edited successfully, the website admin will see the message
+"Successfully updated product!" at the top right of the page.<br>
+
+### Delete Product 1
+
+![Delete Product 1](./assets/readme/features/interactive_messages/watches_clocks_messages_delete_product_button.jpg)
+
+- When the website admin is logged in, they can delete products already added through the website’s front-end by clicking the "Delete" button.<br>
+
+### Delete Product 2
+
+![Delete Product 2](./assets/readme/features/interactive_messages/watches_clocks_messages_bootstrap_model_delete_product.jpg)
+
+- After pressing the "Delete" button the Bootstrap box model will pop up with a message "Are you sure you want to delete this
+product?"at the in the centre of the page.<br>
+
+### Delete Product 3
+
+![Delete Product 3](./assets/readme/features/interactive_messages/watches_clocks_messages_product_delete_success.jpg)
+
+- When the user presses the "Delete" button again within the Bootstrap box model they will see the message "Product
+deleted" at the top right of the page.<br>
+
+### Add Product to Bag
+
+![Add Product to Bag](./assets/readme/features/interactive_messages/watches_clocks_messages_add_to_bag.jpg)
+
+- When users choose a product and add it to the bag they will see a success message at the top right of the screen.<br>
+
+### Update Bag
+
+![Update Bag](./assets/readme/features/interactive_messages/watches_clocks_messages_update_bag.jpg)
+
+- When users update the bag they will see a success message at the top right of the screen.<br>
+
+### Remove Product from Bag
+
+![Remove Product from Bag](./assets/readme/features/interactive_messages/watches_clocks_messages_remove_from_bag.jpg)
+
+- When users remove the products from the bag they will see a success message at the top right of the screen.<br>
+
+### Purchase Success
+
+![Purchase Success](./assets/readme/features/interactive_messages/watches_clocks_messages_purchase_success.jpg)
+
+- When users fill out the check-out form and complete the purchase they will see a success message
+  with the order details at the top right of the screen.<br>
+
+### Purchase Success - Confirmation Email
+
+![ Purchase Success - Confirmation Email](./assets/readme/features/interactive_messages/watches_clocks_messages_purchase_email_confirmation.jpg)
+
+- When users successfully purchase a product they are sent an automatic confirmation email containing all of their order details.<br>
+
+## Admin Panel / Superuser
+
+![Admin Panel / Superuser](./assets/readme/extras/watches_clocks_admin_panel_products.jpg)
+
+- On the Admin Panel and as an admin/superuser I have full access to CRUD functionality. This means I can view, create, edit and
+  delete the following apps:
+
+1. Banners
+2. Checkout
+3. Products
+4. Profiles
+5. Reviews
+
+- As admin/superuser I can also approve reviews, change the status and give other permissions.<br>
+
 
