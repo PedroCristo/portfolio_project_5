@@ -53,6 +53,7 @@ README Table Content
     - [Reset Password Page](#reset-password-page)
     - [Change Password Page](#change-password-page)
     - [Navbar](#navbar)
+    - [Footer](#footer)
 
 ## User Experience - UX
 
@@ -315,4 +316,11 @@ registered and will have access to the Registered User website services.<br>
 - When a user has signed in, more options such as profile or add review will be available in the navbar.
 - Also, a search box is nested in the navbar.
 - The navbar is fully responsive. It collapses into a hamburger menu when the screen size decreases.<br>
+
+### Footer
+
+![Footer](./assets/readme/features/watches_clocks_footer.jpg)
+
+- On the website footer, users can see basic information about the Watches & Clocks. The information includes contact, social media,
+  copyright, and a form where they can subscribe to the newsletter.<br>
 
