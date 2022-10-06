@@ -86,6 +86,10 @@ README Table Content
     - [Meta Pixel - Tracking Audience](#meta-pixel---tracking-audience)
     - [Mailchimp Subscription Service](#mailchimp-subscription-service)
   - [Privacy Policy](#privacy-policy)
+  - [Search Engine Optimization](#search-engine-optimization)
+    - [sitemap.xml](#sitemapxml)
+    - [robots.txt](#robotstxt)
+    - [Sitemap Google Registration](#sitemap-google-registration)
 
 ## User Experience - UX
 
@@ -573,6 +577,38 @@ that the website is compliant with the European Privacy Policy Rules.<br>
 ![Privacy Policy](./assets/readme/extras/watches_clocks_privacy_policy.jpg)
 
 - [Watches & Clocks - Privacy Policy Page](https://www.privacypolicygenerator.info/live.php?token=He4U9OHbOs5hfHSPBg0sqUnVRq04P12y)<br>
+
+## Search Engine Optimization
+
+- The site was optimized by careful selection of keywords relating to the "world" of watches and shops. The entire table has important 
+relevant topics relating to watches and shops. The chosen topics/words are based on my initial understanding of the business. Keywords were chosen 
+based on common topics and themes within the watch and clocks’ industry. Topics and keywords were then tested tried out on Google and the relevant
+returned search suggestions it gave were added to the keyword list. The words crossed out in red wereremoved. Wordtracker highlighted these key 
+words as too popular. Words crossed out in yellow were removed as they were not relevant or specific to the site.<br>
+
+![SEO - Keywords List](./assets/readme/extras/watches_clocks_seo_keywords_list.jpg)<br>
+
+### sitemap.xml
+
+- A sitemap file with a list of important URLs was added to ensure that search engines are able to easily navigate through the site
+  and understand its structure. This was made using XML-sitemaps.com by following the steps:
+
+1. Paste the URL of the deployed site into XML-sitemaps
+2. Download the XML sitemap file
+3. Add the file into the projects root folder, named as sitemap.xml<br>
+
+### robots.txt
+
+- A robots.txt file was created to tell search engines where not to go on the website and increase the quality of the site, ultimately improving the SEO rating.
+
+![Watches & Clocks - Robots.txt](./assets/readme/extras/watches_clocks_robots_txt.jpg)<br>
+
+### Sitemap Google Registration
+
+- To ensure that the Google engine will check the website sitemap file I have registered the Watches & Clocks URL on the Google Search Console.
+
+![Watches & Clocks - Robots.txt](./assets/readme/extras/watches_clocks_sitemap_google_verification.jpg)<br>
+
 
 
 
