@@ -1,7 +1,7 @@
 <!-- PRODUT CHECKOUT IMAGE -->
 {% if item.product.image %}
-<img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+<img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }} Image">
 {% else %}
-<img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+<img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }} Image">
 {% endif %}
 <!-- END OF PRODUT CHECKOUT IMAGE -->
