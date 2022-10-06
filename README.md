@@ -54,6 +54,7 @@ README Table Content
     - [Change Password Page](#change-password-page)
     - [Navbar](#navbar)
     - [Footer](#footer)
+    - [Page 404 - Page Not Found](#page-404---page-not-found)
 
 ## User Experience - UX
 
@@ -323,4 +324,10 @@ registered and will have access to the Registered User website services.<br>
 
 - On the website footer, users can see basic information about the Watches & Clocks. The information includes contact, social media,
   copyright, and a form where they can subscribe to the newsletter.<br>
+
+### Page 404 - Page Not Found
+
+![Page 404 - Page Not Found](./assets/readme/features/watches_clocks_404_page.jpg)
+
+- The user will see this feature when the page that the user is looking for, does not exist or for any typing URL error.<br>  
 
