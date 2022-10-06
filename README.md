@@ -310,9 +310,9 @@ registered and will have access to the Registered User website services.<br>
 - The navigation bar is present at the top of every page and houses all links to the various other pages.
 - The links at the bottom of the navbar are dropdown menus. They are used to filter products such as all products, types of watches, gender and special offers.
 - Is available also a link to go to the Home Page and another one for more options.
-- The options to Register or Log in will change to the option to log out once a user has logged in.
-- Once a user has signed in, more options such as profile or add review will be available in the navbar.
-- A search box is nested in also in the navbar.
-- The navbar is fully responsive, collapsing into a hamburger menu when the screen size becomes smaller.
-- A link is also available to go to the Home Page and another link is available for More Options.<br>
+- A link is also available to go to the Home Page and another link is available for More Options.
+- When a user has logged in, their option to Register or Log in will change to the log out option.
+- When a user has signed in, more options such as profile or add review will be available in the navbar.
+- Also, a search box is nested in the navbar.
+- The navbar is fully responsive. It collapses into a hamburger menu when the screen size decreases.<br>
 
