@@ -80,6 +80,12 @@ README Table Content
     - [Purchase Success](#purchase-success)
     - [Purchase Success - Confirmation Email](#purchase-success---confirmation-email)
   - [Admin Panel / Superuser](#admin-panel--superuser)
+  - [Marketing and Social Media](#marketing-and-social-media)
+    - [Statista - Facebook Users](#statista---facebook-users)
+    - [Watches \& Clocks - Facebook Page](#watches--clocks---facebook-page)
+    - [Meta Pixel - Tracking Audience](#meta-pixel---tracking-audience)
+    - [Mailchimp Subscription Service](#mailchimp-subscription-service)
+  - [Privacy Policy](#privacy-policy)
 
 ## User Experience - UX
 
@@ -523,5 +529,50 @@ deleted" at the top right of the page.<br>
 5. Reviews
 
 - As admin/superuser I can also approve reviews, change the status and give other permissions.<br>
+
+## Marketing and Social Media
+
+- Market research was undertaken to decide on the appropriate marketing strategy to promote the Watches & Clocks brand. For social media marketing,
+Facebook is still the best option to promote brands to potential customers. It is one of the most used social media platforms with 22% of users
+aged between 18 - 24 and 31% of users aged between 25 - 34. This age category is the main target audience for Watches & Clocks. 
+This age range is viewed as the most likely to become potential customers.<br>
+
+### Statista - Facebook Users
+
+![Statista - Facebook Users](./assets/readme/extras/watches_clocks_statista_facebook.jpg)
+
+- Distribution of Facebook users worldwide as of 2022 according to [Statista](https://www.statista.com/)<br>
+
+### Watches & Clocks - Facebook Page
+
+![Watches & Clocks - Facebook Page 1](./assets/readme/extras/watches_clocks_facebook_1.jpg)
+![Watches & Clocks - Facebook Page 2](./assets/readme/extras/watches_clocks_facebook_2.jpg)
+
+- [Watches & Clocks Facebook Page](https://www.facebook.com/people/Watches-Clocks/100086385370740/)<br>
+
+### Meta Pixel - Tracking Audience
+
+- In order to improve the website services, I have set a Meta Pixel service to track the Watches & Clocks audience.
+
+![Meta Pixel - Tracking Audience](./assets/readme/extras/watches_clocks_meta_pixel.jpg)<br>
+
+### Mailchimp Subscription Service
+
+- Users are encouraged to signup for newsletters, discounts and information about the products sold at Watches & Clocks.
+  The signup form is available on the website footer and is present on any page. The email subscription service is run through
+  Mailchimp, allowing the website admin to send marketing emails through the platform, increasing engagement within the site. Below
+  is a screenshot of the Watches & Clocks - Mailchimp dashboard.
+
+![ Mailchimp Subscription Service](./assets/readme/extras/watches_clocks_mailchimp_dashborad.jpg)<br>
+
+## Privacy Policy
+
+- In order to add a page with the Watches & Clocks Privacy Policy I used the service [Privacy Policy Generator](https://www.privacypolicygenerator.info/) to ensure 
+that the website is compliant with the European Privacy Policy Rules.<br>
+
+![Privacy Policy](./assets/readme/extras/watches_clocks_privacy_policy.jpg)
+
+- [Watches & Clocks - Privacy Policy Page](https://www.privacypolicygenerator.info/live.php?token=He4U9OHbOs5hfHSPBg0sqUnVRq04P12y)<br>
+
 
 
