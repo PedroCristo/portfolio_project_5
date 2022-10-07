@@ -7,19 +7,32 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Home_banners_top',
+            name="Home_banners_top",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=254)),
-                ('description', models.TextField()),
-                ('image', models.ImageField(blank=True, null=True, upload_to='banners/')),
-                ('image_small', models.ImageField(blank=True, null=True, upload_to='banners/')),
-                ('featured', models.BooleanField(default=False)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=254)),
+                ("description", models.TextField()),
+                (
+                    "image",
+                    models.ImageField(blank=True, null=True, upload_to="banners/"),
+                ),
+                (
+                    "image_small",
+                    models.ImageField(blank=True, null=True, upload_to="banners/"),
+                ),
+                ("featured", models.BooleanField(default=False)),
             ],
         ),
     ]

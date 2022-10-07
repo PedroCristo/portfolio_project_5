@@ -6,15 +6,18 @@ class Reviews(models.Model):
     """
     Model for Reviews
     """
+
     class Meta:
-        verbose_name_plural = 'Reviews'
+        verbose_name_plural = "Reviews"
+
     review_title = models.CharField(max_length=100)
     name = models.CharField(max_length=20)
-    image = models.ImageField(upload_to='reviews_images/', null=True, blank=True)
+    image = models.ImageField(upload_to="reviews_images/", null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
     service_review = models.TextField(null=True, max_length=400)
     service_rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
+        max_digits=6, decimal_places=2, null=True, blank=True
+    )
     approved = models.BooleanField(default=False)
     carousel_review = models.BooleanField(default=False)
 
@@ -23,4 +26,4 @@ class Reviews(models.Model):
 
     def get_absolute_url(self):
         """Sets absolute URL"""
-        return reverse('reviews')
+        return reverse("reviews")

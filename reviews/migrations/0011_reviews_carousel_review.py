@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('reviews', '0010_auto_20220911_1741'),
+        ("reviews", "0010_auto_20220911_1741"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='reviews',
-            name='carousel_review',
+            model_name="reviews",
+            name="carousel_review",
             field=models.BooleanField(default=False),
         ),
     ]

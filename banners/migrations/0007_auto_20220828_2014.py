@@ -6,12 +6,12 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('banners', '0006_auto_20220828_1455'),
+        ("banners", "0006_auto_20220828_1455"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='bannercarousel',
-            options={'verbose_name_plural': 'Home Banners Carousel'},
+            name="bannercarousel",
+            options={"verbose_name_plural": "Home Banners Carousel"},
         ),
     ]

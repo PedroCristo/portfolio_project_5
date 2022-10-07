@@ -6,16 +6,16 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('reviews', '0011_reviews_carousel_review'),
+        ("reviews", "0011_reviews_carousel_review"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='reviews',
-            name='product_review',
+            model_name="reviews",
+            name="product_review",
         ),
         migrations.RemoveField(
-            model_name='reviews',
-            name='rating',
+            model_name="reviews",
+            name="rating",
         ),
     ]

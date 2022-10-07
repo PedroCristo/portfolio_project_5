@@ -7,82 +7,118 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('products', '0003_product_has_sizes'),
+        ("products", "0003_product_has_sizes"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Gender_category',
+            name="Gender_category",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100)),
-                ('friendly_name', models.CharField(blank=True, max_length=100, null=True)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=100)),
+                (
+                    "friendly_name",
+                    models.CharField(blank=True, max_length=100, null=True),
+                ),
             ],
             options={
-                'verbose_name_plural': 'Gender Categories',
+                "verbose_name_plural": "Gender Categories",
             },
         ),
         migrations.CreateModel(
-            name='Product_status',
+            name="Product_status",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100)),
-                ('friendly_name', models.CharField(blank=True, max_length=100, null=True)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=100)),
+                (
+                    "friendly_name",
+                    models.CharField(blank=True, max_length=100, null=True),
+                ),
             ],
             options={
-                'verbose_name_plural': 'Product Status',
+                "verbose_name_plural": "Product Status",
             },
         ),
         migrations.AddField(
-            model_name='product',
-            name='featured',
+            model_name="product",
+            name="featured",
             field=models.BooleanField(default=False),
         ),
         migrations.AddField(
-            model_name='product',
-            name='features',
+            model_name="product",
+            name="features",
             field=models.TextField(default=10),
             preserve_default=False,
         ),
         migrations.AddField(
-            model_name='product',
-            name='old_price',
+            model_name="product",
+            name="old_price",
             field=models.DecimalField(decimal_places=2, default=0, max_digits=6),
         ),
         migrations.AddField(
-            model_name='product',
-            name='watch_details',
+            model_name="product",
+            name="watch_details",
             field=models.TextField(default=10),
             preserve_default=False,
         ),
         migrations.AlterField(
-            model_name='category',
-            name='friendly_name',
+            model_name="category",
+            name="friendly_name",
             field=models.CharField(blank=True, max_length=100, null=True),
         ),
         migrations.AlterField(
-            model_name='category',
-            name='id',
-            field=models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID'),
+            model_name="category",
+            name="id",
+            field=models.AutoField(
+                auto_created=True, primary_key=True, serialize=False, verbose_name="ID"
+            ),
         ),
         migrations.AlterField(
-            model_name='category',
-            name='name',
+            model_name="category",
+            name="name",
             field=models.CharField(max_length=100),
         ),
         migrations.AlterField(
-            model_name='product',
-            name='id',
-            field=models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID'),
+            model_name="product",
+            name="id",
+            field=models.AutoField(
+                auto_created=True, primary_key=True, serialize=False, verbose_name="ID"
+            ),
         ),
         migrations.AddField(
-            model_name='product',
-            name='gender_category',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='products.Gender_category'),
+            model_name="product",
+            name="gender_category",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                to="products.Gender_category",
+            ),
         ),
         migrations.AddField(
-            model_name='product',
-            name='product_status',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='products.Product_status'),
+            model_name="product",
+            name="product_status",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                to="products.Product_status",
+            ),
         ),
     ]
