@@ -6,17 +6,15 @@
 <!-- FONTAWSOME -->
 <script src="https://kit.fontawesome.com/e9c73d7092.js"></script>
 <!-- JQUERY -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <!-- BOOTSTRAP JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <!-- STRIPE -->
 <script src="https://js.stripe.com/v3/"></script>
 <script>
 // Show alert toasts on the top
-    $('.toast').toast('show');
-</script>
-<script>
+$('.toast').toast('show');
+
 // Settimeout to dismiss the toast alert box
 $(function () {
     setTimeout(function () {
@@ -25,20 +23,19 @@ $(function () {
             }
     }, 4000);
 });
-</script>
-<script>
-    // Meta pixel
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '500695501583616');
-    fbq('track', 'PageView');
-    fbq('track', 'Lead');
+
+// Meta pixel
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '500695501583616');
+fbq('track', 'PageView');
+fbq('track', 'Lead');
 </script>
 <noscript>
     <img height="1" 
@@ -48,5 +45,3 @@ $(function () {
          src="https://www.facebook.com/tr?id=500695501583616&ev=PageView&noscript=1">
 </noscript>
 {% endblock %}
-</body>
-</html>
