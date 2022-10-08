@@ -90,8 +90,10 @@ README Table Content
     - [sitemap.xml](#sitemapxml)
     - [robots.txt](#robotstxt)
     - [Sitemap Google Registration](#sitemap-google-registration)
-  - [AWS S3 Bucket](#aws-s3-bucket)
+  - [AWS](#aws)
+    - [AWS S3 Bucket](#aws-s3-bucket)
     - [IAM Set Up](#iam-set-up)
+    - [Connecting AWS to the Project](#connecting-aws-to-the-project)
   - [Stripe Payments](#stripe-payments)
     - [Payments](#payments)
     - [Webhooks](#webhooks)
@@ -628,7 +630,9 @@ words as too popular. Words crossed out in yellow were removed as they were not 
 
 ![Watches & Clocks - Robots.txt](./assets/readme/extras/watches_clocks_sitemap_google_verification.jpg)<br>
 
-## AWS S3 Bucket 
+## AWS 
+
+### AWS S3 Bucket 
 
 The deployed site uses AWS S3 Buckets to store the webpages static and media files. More information on how you can set up an AWS S3 Bucket can be found below:
 
@@ -701,6 +705,72 @@ The deployed site uses AWS S3 Buckets to store the webpages static and media fil
 4. Provide a username and check "Programmatic Access", then click 'Next: Permissions'.
 5. Ensure your policy is selected and navigate through until you click "Add User".
 6. Download the "CSV file", which contains the user's access key and secret access key.
+
+### Connecting AWS to the Project
+
+1. Within your terminal install the following packages by typing 
+
+```
+  pip3 install boto3
+  pip3 install django-storages 
+```  
+
+2. Freeze the requirements by typing:
+
+```
+pip3 freeze > requirements.txt
+```
+
+3. Add "storages" to your installed apps within your settings.py file.
+4. At the bottom of the settings.py file add the following code:
+
+```
+if 'USE_AWS' in os.environ:
+    AWS_STORAGE_BUCKET_NAME = 'insert-bucket-name-here'
+    AWS_S3_REGION_NAME = 'insert-your-region-here'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+```
+5. Add the following keys within Heroku: "AWS_ACCESS_KEY_ID" and "AWS_SECRET_ACCESS_KEY". These can be found in your CSV file.
+6. Add the key "USE_AWS", and set the value to True within Heroku.
+6. Remove the "DISABLE_COLLECTSTAIC" variable from Heroku.
+7. Within your settings.py file inside the code just written add: 
+
+```
+  AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
+```
+8. Inside the settings.py file inside the bucket config if statement add the following lines of code:
+
+```
+STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+STATICFILES_LOCATION = 'static'
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+MEDIAFILES_LOCATION = 'media'
+
+STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+AWS_S3_OBJECT_PARAMETERS = {
+    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+    'CacheControl': 'max-age=94608000',
+}
+```
+
+9. In the root directory of your project create a file called "custom_storages.py". Import the following at the top of this file and add the classes below:
+
+```
+  from django.conf import settings
+  from storages.backends.s3boto3 import S3Boto3Storage
+
+  class StaticStorage(S3Boto3Storage):
+    location = settings.STATICFILES_LOCATION
+
+  class MediaStorage(S3Boto3Storage):
+    location = settings.MEDIAFILES_LOCATION
+```
+
+10. Navigate back to you AWS S3 Bucket and click on "Create Folder" name this folder "media", within the media file click "Upload > Add Files" and select the images for your site.
+11. Under "Permissions" select the option "Grant public-read access" and click "Upload".
 
 ## Stripe Payments
 
