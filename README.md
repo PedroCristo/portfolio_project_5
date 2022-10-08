@@ -670,8 +670,8 @@ Below is a screenshot of the Watches 6 Clocks - Stripe dashboard.
 - VSCode was used to create and edit the website
 - [Lucidchart](https://lucid.app/)
 - Lucidchart was used to create the database diagram
-- [PEP8](http://pep8online.com/)
-- PEP8 was used to validate all the Python code
+- [Pycodestyle](http://pep8online.com/)
+- Pycodestyle was used to validate all the Python code
 - [W3C - HTML](https://validator.w3.org/)
 - W3C- HTML was used to validate all the HTML code
 - [W3C - CSS](https://jigsaw.w3.org/css-validator/)
