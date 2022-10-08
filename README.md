@@ -91,6 +91,8 @@ README Table Content
     - [robots.txt](#robotstxt)
     - [Sitemap Google Registration](#sitemap-google-registration)
   - [Stripe Payments](#stripe-payments)
+    - [Payments](#payments)
+    - [Webhooks](#webhooks)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
       - [Django Packages](#django-packages)
@@ -627,7 +629,39 @@ words as too popular. Words crossed out in yellow were removed as they were not 
 ## Stripe Payments
 
 - The Stripe payments system is set up as the online payment processing and credit card processing platform for the purchases. 
-Below is a screenshot of the Watches 6 Clocks - Stripe dashboard.
+You will need a stripe account which you can sign up for [here](https://stripe.com/en-ie)
+
+### Payments 
+- To set up stripe payments you can follow their guid [here](https://stripe.com/docs/payments/accept-a-payment#web-collect-card-details)
+
+### Webhooks
+
+1. To set up a webhook, sign into your stripe account and click 'Developers' located in the top right of the navbar.
+2. Then in the side-nav under the Developers title, click on "Webhooks", then "Add endpoint".
+3. On the next page you will need to input the link to your heroku app followed by /checkout/wh/. It should look something like this:
+   
+    ```
+    https://your-app-name.herokuapp.com/checkout/wh/
+    ```
+
+4. Then click "+ Select events" and check the "Select all events" checkbox at the top before clicking "Add events" at the bottom. Once this is done finish the form by clicking "Add endpoint".
+5. Your webhook is now created and you should see that it has generated a secret key. You will need this to add to your heroku config vars.
+6. Head over to your app in heroku and navigate to the config vars section under settings. You will need the secret key you just generated for your webhook, in addition to your Publishable key and secret key that you can find in the API keys section back in stripe.
+7. Add these values under these keys:
+   
+    ```
+    STRIPE_PUBLIC_KEY = 'insert your stripe publishable key'
+    STRIPE_SECRET_KEY = 'insert your secret key'
+    STRIPE_WH_SECRET = 'insert your webhooks secret key'
+
+    ```
+8. Finally, back in your setting.py file in django, insert the following near the bottom of the file:  
+    ```
+    STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+    STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+    STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+    ```
+- Below is a screenshot of the Watches 6 Clocks - Stripe dashboard.
 
 ![ Stripe Payments](./assets/readme/extras/watches_clocks_stripe_dashboard.jpg)<br>
 
