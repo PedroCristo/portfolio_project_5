@@ -5,6 +5,9 @@ from .models import BannerCarousel, BannerBottom, BannerVertical
 
 @admin.register(BannerCarousel)
 class BannerCarouselAdmin(admin.ModelAdmin):
+    """
+    Displays the Banner Carousel model in the admin panel
+    """
     list_display = (
         "name",
         "description",
@@ -14,6 +17,9 @@ class BannerCarouselAdmin(admin.ModelAdmin):
 
 @admin.register(BannerBottom)
 class BannerBottom(admin.ModelAdmin):
+    """
+    Displays the Banner Bottom model in the admin panel
+    """
     list_display = (
         "name",
         "description",
@@ -23,6 +29,9 @@ class BannerBottom(admin.ModelAdmin):
 
 @admin.register(BannerVertical)
 class BannerVertical(admin.ModelAdmin):
+    """
+    Displays the Banner Vertical model in the admin panel
+    """
     list_display = (
         "name",
         "description",

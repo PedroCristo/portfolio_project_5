@@ -46,21 +46,27 @@ def all_products(request):
 
         if "gender_category" in request.GET:
             gender_category = request.GET["gender_category"].split(",")
-            products = products.filter(gender_category__name__in=gender_category)
-            gender_categories = GenderCategory.objects.filter(name__in=gender_category)
+            products = products.filter(
+                gender_category__name__in=gender_category)
+            gender_categories = (
+                GenderCategory.objects.filter(name__in=gender_category))
 
         if "product_status" in request.GET:
             product_status = request.GET["product_status"].split(",")
             products = products.filter(product_status__name__in=product_status)
-            product_status = ProductStatus.objects.filter(name__in=product_status)
+            product_status = (
+                ProductStatus.objects.filter(name__in=product_status))
 
         if "q" in request.GET:
             query = request.GET["q"]
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request,
+                    "You didn't enter any search criteria!")
                 return redirect(reverse("products"))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(
+                name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f"{sort}_{direction}"
@@ -103,7 +109,8 @@ def add_product(request):
             return redirect(reverse("product_detail", args=[product.id]))
         else:
             messages.error(
-                request, "Failed to add product. Please ensure the form is valid."
+                request,
+                "Failed to add product. Please ensure the form is valid."
             )
     else:
         form = ProductForm()
@@ -132,7 +139,8 @@ def edit_product(request, product_id):
             return redirect(reverse("product_detail", args=[product.id]))
         else:
             messages.error(
-                request, "Failed to update product. Please ensure the form is valid."
+                request,
+                "Failed to update product. Please ensure the form is valid."
             )
     else:
         form = ProductForm(instance=product)

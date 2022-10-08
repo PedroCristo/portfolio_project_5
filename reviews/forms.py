@@ -5,7 +5,7 @@ from .widgets import CustomClearableFileInput
 
 class ReviewsForm(forms.ModelForm):
     """
-    Form for Reviews
+    Creates the Reviews form information
     """
 
     class Meta:

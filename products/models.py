@@ -74,9 +74,16 @@ class Product(models.Model):
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
     old_price = models.DecimalField(default=0, max_digits=6, decimal_places=2)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    rating = models.DecimalField(
+                                 max_digits=6,
+                                 decimal_places=2,
+                                 null=True,
+                                 blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(upload_to="products_images/", null=True, blank=True)
+    image = models.ImageField(
+                              upload_to="products_images/",
+                              null=True,
+                              blank=True)
     product_status = models.ForeignKey(
         "ProductStatus", null=True, blank=True, on_delete=models.SET_NULL
     )
