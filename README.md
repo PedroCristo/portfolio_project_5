@@ -90,6 +90,8 @@ README Table Content
     - [sitemap.xml](#sitemapxml)
     - [robots.txt](#robotstxt)
     - [Sitemap Google Registration](#sitemap-google-registration)
+  - [AWS S3 Bucket](#aws-s3-bucket)
+    - [IAM Set Up](#iam-set-up)
   - [Stripe Payments](#stripe-payments)
     - [Payments](#payments)
     - [Webhooks](#webhooks)
@@ -626,6 +628,80 @@ words as too popular. Words crossed out in yellow were removed as they were not 
 
 ![Watches & Clocks - Robots.txt](./assets/readme/extras/watches_clocks_sitemap_google_verification.jpg)<br>
 
+## AWS S3 Bucket 
+
+The deployed site uses AWS S3 Buckets to store the webpages static and media files. More information on how you can set up an AWS S3 Bucket can be found below:
+
+1. Create an AWS account [here](https://portal.aws.amazon.com/).
+2. Login to your account and within the search bar type in "S3".
+3. Within the S3 page click on the button that says "Create Bucket".
+4. Name the bucket and select the region which is closest to you.
+5. Underneath "Object Ownership" select "ACLs enabled".
+6. Uncheck "Block Public Access" and acknowledge that the bucket will be made public, then click "Create Bucket".
+7. Inside the created bucket click on the "Properties" tab. Below "Static Website Hosting" click "Edit" and change the Static website hosting option to "Enabled". Copy the default values for the index and error documents and click "Save Changes".
+8. Click on the "Permissions" tab, below "Cross-origin Resource Sharing (CORS)", click "Edit" and then paste in the following code:
+
+  ```
+    [
+        {
+            "AllowedHeaders": [
+            "Authorization"
+            ],
+            "AllowedMethods": [
+            "GET"
+            ],
+            "AllowedOrigins": [
+            "*"
+            ],
+            "ExposeHeaders": []
+        }
+    ]
+  ```
+
+9. Within the "Bucket Policy" section. Click "Edit" and then "Policy Generator". Click the "Select Type of Policy" dropdown and select "S3 Bucket Policy" and within "Principle" allow all principals by typing "*".
+10. Within the "Actions" dropdown menu select "Get Object" and in the previous tab copy the "Bucket ARN number". Paste this within the policy generator within the field labelled "Amazon Resource Name (ARN)".
+11. Click "Add statement > Generate Policy" and copy the policy that's been generated and paste this into the "Bucket Policy Editor".
+12. Before saving, add /* at the end of your "Resource Key", this will allow access to all resources within the bucket.
+13. Once saved, scroll down to the "Access Control List (ACL)" and click "Edit".
+14. Next to "Everyone (public access)", check the "list" checkbox and save your changes.
+
+### IAM Set Up
+
+1. Search for IAM within the AWS navigation bar and select it.
+2. Click "User Groups" that can be seen in the side bar and then click "Create group" and name the group 'manage-your-project-name'.
+3. Click "Policies" and then "Create policy".
+4. Navigate to the JSON tab and click "Import Managed Policy", within here search "S3" and select "AmazonS3FullAccess" followed by "Import".
+5. Navigate back to the recently created S3 bucket and copy your "ARN Number". Go back to "This Policy" and update the "Resource Key" to include your ARN Number, and another line with your ARN followed by a "/*".
+   
+- Below is an example of what this should look like:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "s3-object-lambda:*"
+            ],
+            "Resource": [
+                "YOUR-ARN-NO-HERE",
+                "YOUR-ARN-NO-HERE/*"
+            ]
+        }
+    ]
+}
+
+```
+
+1. Ensure the policy has been given a name and a short description, then click "Create Policy".
+2. Click "User groups", and then the group you created earlier. Under permissions click "Add Permission" and from the dropdown click "Attach Policies".
+3. Select "Users" from the sidebar and click "Add User".
+4. Provide a username and check "Programmatic Access", then click 'Next: Permissions'.
+5. Ensure your policy is selected and navigate through until you click "Add User".
+6. Download the "CSV file", which contains the user's access key and secret access key.
+
 ## Stripe Payments
 
 - The Stripe payments system is set up as the online payment processing and credit card processing platform for the purchases. 
@@ -655,13 +731,13 @@ You will need a stripe account which you can sign up for [here](https://stripe.c
     STRIPE_WH_SECRET = 'insert your webhooks secret key'
 
     ```
-8. Finally, back in your setting.py file in django, insert the following near the bottom of the file:  
+8. Finally, back in your settings.py file in django, insert the following near the bottom of the file:  
     ```
     STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
     STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
     STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
     ```
-- Below is a screenshot of the Watches 6 Clocks - Stripe dashboard.
+- Below is a screenshot of the Watches & Clocks - Stripe dashboard.
 
 ![ Stripe Payments](./assets/readme/extras/watches_clocks_stripe_dashboard.jpg)<br>
 
