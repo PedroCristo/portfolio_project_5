@@ -90,7 +90,7 @@ README Table Content
     - [sitemap.xml](#sitemapxml)
     - [robots.txt](#robotstxt)
     - [Sitemap Google Registration](#sitemap-google-registration)
-  - [AWS](#aws)
+  - [AWS Setup Process](#aws-setup-process)
     - [AWS S3 Bucket](#aws-s3-bucket)
     - [IAM Set Up](#iam-set-up)
     - [Connecting AWS to the Project](#connecting-aws-to-the-project)
@@ -630,7 +630,7 @@ words as too popular. Words crossed out in yellow were removed as they were not 
 
 ![Watches & Clocks - Robots.txt](./assets/readme/extras/watches_clocks_sitemap_google_verification.jpg)<br>
 
-## AWS 
+## AWS Setup Process
 
 ### AWS S3 Bucket 
 
