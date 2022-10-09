@@ -98,8 +98,7 @@
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 							{% else %}
 								<label class="form-check-label" for="id-save-info">
-                                    <a class="text-info" 
-                                    ="{% url 'account_signup' %}"  aria-label="Go to the account signup page">Create an account</a> or 
+                                    <a href="{% url 'account_signup' %}" class="text-info"  aria-label="Go to the account signup page">Create an account</a> or 
                                     <a href="{% url 'account_login' %}" aria-label="Go to the account login page" class="text-info" >login</a> to save this information
                                 </label>
 							{% endif %}
