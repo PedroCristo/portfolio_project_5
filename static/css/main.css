@@ -140,10 +140,6 @@ body.modal-open[style] {
     padding-right: 0px !important;
 }
 
-.topnav.modal-open[style] {
-    padding-right: 0px !important;
-}
-
 /*******************************
 *                              *
 *         INDEX PAGE           *
@@ -797,6 +793,10 @@ input[name='q']::placeholder {
 
     .header-container {
         padding-top: 164px;
+    }
+
+    .topnav {
+        padding-right: 0 !important;
     }
 }
 
