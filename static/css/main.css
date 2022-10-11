@@ -128,6 +128,22 @@ i {
     padding-left: 90px;
 }
 
+.modal {
+    top: 90px !important;
+}
+
+body.modal-open {
+    overflow: visible !important;
+}
+
+body.modal-open[style] {
+    padding-right: 0px !important;
+}
+
+.topnav.modal-open[style] {
+    padding-right: 0px !important;
+}
+
 /*******************************
 *                              *
 *         INDEX PAGE           *

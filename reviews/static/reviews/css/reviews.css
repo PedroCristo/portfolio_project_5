@@ -10,18 +10,6 @@
     width: inherit;
 }
 
-.modal {
-    top: 100px !important;
-}
-
-body.modal-open {
-    overflow: visible !important;
-}
-
-.modal-open[style] {
-    padding-right: 0px !important;
-}
-
 .btn-edit {
     padding: 8px 26px;
     margin-right: 8PX;
