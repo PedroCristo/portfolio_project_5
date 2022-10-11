@@ -2,7 +2,7 @@
 $("#year").text(new Date().getFullYear());
 
  // Smooth scroll on click
- $("a").on('click', function (e) {
+ $(".btn-top").on('click', function (e) {
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       e.preventDefault();
