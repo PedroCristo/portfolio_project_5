@@ -103,3 +103,23 @@ Lighthouse was used to test Performance, Best Practices, Accessibility and SEO o
 
 ### Console Results
 ![Console Results](./assets/readme/test/watches_clocks_console_results.jpg).
+
+## Manual Testing
+### Frontend
+* The Signup, Login and Logout system has no issues and is working accordingly. It shows the right 
+  interactive message to the users.
+* The Profile Page is working properly. It updates the user information. It shows the interactive message to the user once the update is complete.
+* All the internal links are working and bring the user to the right page on the website.
+* All the external links are working and bring the user to the right social media page by 
+  opening a new browser tab.
+* The Categories Page shows the products filtered by category without issues.
+* The drop-down menus in the navbar shows a list of categories on every page of the website.
+* The service review form has no issues and it submits a new user review once the form is completed by a
+  registered user. 
+* The functionality to delete a reviews, previously sent by the user or by the superuser, is 
+  working without issues. The Bootstrap model is opening to ask the user if they want to delete 
+  the review. Once the action is complete, the interactive message is displayed at the top right of the page.
+* The functionality to add/update/delete a product, previously submitted by the website admin, is 
+  working without issues.
+* The stripe payment system is working correctly and it is receiving the user's payment.
+* Products can be filtered by different categories and this process is working correctly.
