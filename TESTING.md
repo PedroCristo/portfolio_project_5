@@ -85,10 +85,10 @@ code and could not be changed to remove the errors.
 Lighthouse was used to test Performance, Best Practices, Accessibility and SEO on Desktop.
 
 ##### Desktop Results:
-![Lighthouse Mobile Result](./assets/readme/test/watches_clocks_light_house_desktop_results.jpg).
+![Lighthouse Desktop Result](./assets/readme/test/watches_clocks_light_house_desktop_results.jpg).
 
 ###### Mobile Results:
-![Lighthouse Desktop Result](./assets/readme/test/tasty_blog_lighthouse_mobile_results.jpg).
+![Lighthouse Mobile Result](./assets/readme/test/tasty_blog_lighthouse_mobile_results.jpg).
 
 ### CSS Validation
 * Custom CSS was validated using W3C Jigsaw validation service. Fifty-three warnings were displayed, however, 
@@ -129,3 +129,6 @@ Lighthouse was used to test Performance, Best Practices, Accessibility and SEO o
   I have created, deleted, and updated data in all models without errors. The models have the behaviour expected for what they were built for.
 * Whenever a user submits a new review the Superuser has to approve it before it will be displayed on the website. This functionality is 
   working without issues.
+
+### Manual Test Case
+The Test case for this project can be found [here](TEST_CASE.md)  
