@@ -123,3 +123,9 @@ Lighthouse was used to test Performance, Best Practices, Accessibility and SEO o
   working without issues.
 * The stripe payment system is working correctly and it is receiving the user's payment.
 * Products can be filtered by different categories and this process is working correctly.
+
+### Backend/Admin Panel
+* I have tested the Admin Panel repeatedly since the start of the project development. All the models are working without issues.  
+  I have created, deleted, and updated data in all models without errors. The models have the behaviour expected for what they were built for.
+* Whenever a user submits a new review the Superuser has to approve it before it will be displayed on the website. This functionality is 
+  working without issues.
