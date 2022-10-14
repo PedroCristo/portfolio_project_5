@@ -80,3 +80,12 @@ were entered into the checker and no errors were found in any of the custom code
 - A few errors were raised in the watches_and_clocks/settings.py file, however these were related to default django authorisation
 code and could not be changed to remove the errors.
 * manage.py
+
+### Lighthouse
+Lighthouse was used to test Performance, Best Practices, Accessibility and SEO on Desktop.
+
+##### Desktop Results:
+![Lighthouse Mobile Result](./assets/readme/test/watches_clocks_light_house_desktop_results.jpg).
+
+###### Mobile Results:
+![Lighthouse Desktop Result](./assets/readme/test/tasty_blog_lighthouse_mobile_results.jpg).
