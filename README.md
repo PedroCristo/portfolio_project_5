@@ -99,7 +99,7 @@ README Table Content
     - [Webhooks](#webhooks)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
-      - [Django Packages](#django-packages)
+    - [Django Packages](#django-packages)
     - [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
     - [Testing](#testing)
   - [Creating the Django app](#creating-the-django-app)
@@ -821,7 +821,7 @@ You will need a stripe account which you can sign up for [here](https://stripe.c
 - [Django](https://www.python.org/)
 - [Python](https://www.djangoproject.com/)<br>
 
-#### Django Packages
+### Django Packages
 
 - [Gunicorn](https://gunicorn.org/) as the server for Heroku
 - [Dj_database_url](https://pypi.org/project/dj-database-url/) to parse the database URL from the environment variables in Heroku
@@ -970,7 +970,3 @@ Testing results are [here](TESTING.md)
 
 - Special thanks to my mentor Sandeep Aggarwal, my colleagues at Code Institute, Kasia Bogucka, and Mairéad Gillic for
   their assistance throughout this project.
-
-
-
-
