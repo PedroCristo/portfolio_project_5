@@ -89,3 +89,10 @@ Lighthouse was used to test Performance, Best Practices, Accessibility and SEO o
 
 ###### Mobile Results:
 ![Lighthouse Desktop Result](./assets/readme/test/tasty_blog_lighthouse_mobile_results.jpg).
+
+### CSS Validation
+* Custom CSS was validated using W3C Jigsaw validation service. Fifty-three warnings were displayed, however, 
+  these are related to Google Fonts and vendor extension prefixes which will not affect the CSS performance.
+  
+![CSS Validation Result](./assets/readme/test/watches_clocks_css_main_results.jpg).
+![CSS Validation Result](./assets/readme/test/watches_clocks_css_main_warnings.jpg).
