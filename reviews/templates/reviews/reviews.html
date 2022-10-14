@@ -61,7 +61,7 @@
          <div class="text-center mt-3">
             <a href="edit_review/{{review.id}}" aria-label="Go to edit review {{review.id}} page" class="btn-edit btn-sm btn-secondary mb-3">Edit</a>
             <button type="button" class="btn-sm btn-danger mb-3" data-bs-toggle="modal"
-               data-bs-target="#delete-review-{{review.id}}">Delete</button>
+               data-bs-target="#delete-review-{{review.id}}" aria-label="Delete">Delete</button>
          </div>
          <!-- Delete review bootstrap modal-->
          <div class="modal fade" id="delete-review-{{review.id}}" tabindex="-1" aria-hidden="true">
@@ -75,7 +75,7 @@
                   </div>
                   <div class="modal-footer">
                      <button type="button" class="btn btn-secondary"
-                        data-bs-dismiss="modal">Close</button>
+                        data-bs-dismiss="modal" aria-label="Close Modal">Close</button>
                      <a href="delete_review/{{review.id}}" aria-label="Delete review {{review.id}}" class="btn btn-danger">Delete</a>
                   </div>
                </div>

@@ -106,7 +106,7 @@
                            <div class="text-center mt-3">
                               <a href="{% url 'edit_product' product.id %}" aria-label="Go to the {{ product.name }} edit page" class="btn-edit btn-sm btn-secondary mb-3">Edit</a>
                               <button type="button" class="btn-sm btn-danger mb-3" data-bs-toggle="modal"
-                                 data-bs-target="#delete-product{{ product.id }}">Delete</button>
+                                 data-bs-target="#delete-product{{ product.id }}" aria-label="Delete">Delete</button>
                            </div>
                            <!-- Delete product bootstrap modal-->
                            <div class="modal fade" id="delete-product{{ product.id }}" tabindex="-1" aria-hidden="true">
@@ -120,7 +120,7 @@
                                     </div>
                                     <div class="modal-footer">
                                        <button type="button" class="btn btn-secondary"
-                                          data-bs-dismiss="modal">Close</button>
+                                          data-bs-dismiss="modal" aria-label="Close Modal">Close</button>
                                        <a href="{% url 'delete_product' product.id %}" aria-label="Delete {{ product.name }}" class="btn btn-danger">Delete</a>
                                     </div>
                                  </div>
