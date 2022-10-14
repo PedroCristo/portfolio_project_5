@@ -96,3 +96,7 @@ Lighthouse was used to test Performance, Best Practices, Accessibility and SEO o
   
 ![CSS Validation Result](./assets/readme/test/watches_clocks_css_main_results.jpg).
 ![CSS Validation Result](./assets/readme/test/watches_clocks_css_main_warnings.jpg).
+
+### jQuery Validation
+![jQuery Validation Result](./assets/readme/test/watches_clocks_js_hint_results_1.jpg).
+![jQuery Validation Result](./assets/readme/test/watches_clocks_js_hint_results_2.jpg).
