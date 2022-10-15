@@ -168,26 +168,26 @@ All functionality and development of this project were managed using GitHub whic
 ![Colours Palete](./assets/readme/extras/watches_clocks_color_palete.png)<br>
 
 - The colour scheme is kept simple by opting for a combination of white text set against the image
-  background and black text set against the white background. The navbar was set on a white background
-  and a light grey on the bottom. The interactive colour is used for icons and the website logo.
-  Yellow is used for the "Buy Now" buttons and red is used to the "Discover More" buttons. The Dark grey was used for the
-  website footer. This contrasts with the rest of the website.
+background and black text set against the white background. The navbar was set on a white background
+and a light grey on the bottom. The interactive colour is used for icons and the website logo.
+Yellow is used for the "Buy Now" buttons and red is used to the "Discover More" buttons. The Dark grey was used for the
+website footer. This contrasts with the rest of the website.
 
 #### Typography
 
 - The Montserrat font is used as the main font for the whole project. The Kaushan font is used to
-  display the website logo.
+display the website logo.
 
 #### Imagery
 
 - All the images were converted to webp format to improve the website performance. The product images and banners are
-  uploaded by the admin panel. The image banners are available in two different sizes. The different sizes allow for the
-  banners to be displayed on both desktop and mobile platforms.
+uploaded by the admin panel. The image banners are available in two different sizes. The different sizes allow for the
+banners to be displayed on both desktop and mobile platforms.
 
 #### Video
 
 - On the landing page, 2 videos playing as a background. One video is displayed on the desktop platform whilst
-  the second video plays on the mobile platform. The two videos were both compressed to improve the website's performance.
+the second video plays on the mobile platform. The two videos were both compressed to improve the website's performance.
 
 ### Wireframes
 
@@ -204,54 +204,55 @@ Wireframes for this project are located [here](WIREFRAMES.md)
 ![Landing page](./assets/readme/features/watches_clocks_landing_page.jpg)
 
 - The Landing page works as the website cover. Users will see a background video playing in a loop, a slogan text about
-  the available collection, and two social media buttons. There is also a button to go to the website's Home Page.<br>
+the available collection, and two social media buttons. There is also a button to go to the website's Home Page.<br>
 
 ### Home Page - Images Carousel
 
 ![Home Page - Images Carousel](./assets/readme/features/watches_clocks_home_page_carousel.jpg)
 
 - The home page is equipped with a 3 images carousel on the
-  top. Users will see 3 Watches & Clocks shop banners advertising products and services.<br>
+top. Users will see 3 Watches & Clocks shop banners advertising products and services.<br>
 
 ### Home Page - Selected Products
 
 ![Home Page - Selected Products](./assets/readme/features/watches_clocks_home_page_selected_products.jpg)
 
 - In this feature, users will see a variety of products selected by the website admin. It can be used to highlight special
-  or popular products. The website admin can choose the displayed products by selecting a product in
-  the admin panel or from the website front-end by clicking on the featured box.<br>
+or popular products. The website admin can choose the displayed products by selecting a product in
+the admin panel or from the website front-end by clicking on the featured box.<br>
 
 ### Home Page - Image Banner
 
 ![Home Page - Image Banner](./assets/readme/features/watches_clocks_home_page_banner.jpg)
 
-- This banner feature is used to advertise new or popular products on the website. The website admin can upload various advertising banners through the admin panel. The displayed advertised banner can be easily and quickly changed by clicking on the banner´s featured box. It allows
-  the admin to change the banner easily depending on what advertisied product they would like to be displayed at a certain time.<br>
+- This banner feature is used to advertise new or popular products on the website. The website admin can upload various advertising banners through 
+the admin panel. The displayed advertised banner can be easily and quickly changed by clicking on the banner´s featured box. It allows
+the website admin to change the banner easily depending on what advertisied product they would like to be displayed at a certain time.<br>
 
 ### Home Page - Customers Reviews Carousel
 
 ![Home Page - Customers Reviews Carousel](./assets/readme/features/watches_clocks_home_page_reviews.jpg)
 
 - In this feature, users can see a list of website service reviews written by other users.
-  The website admin can choose which reviews are displayed on this carousel by clicking the
-  Carousel Review box in the admin panel.<br>
+The website admin can choose which reviews are displayed on this carousel by clicking the
+Carousel Review box in the admin panel.<br>
 
 ### Products Page
 
 ![Products Page](./assets/readme/features/watches_clocks_products_page.jpg)
 
 - On this page, users will see all the products available on thewebsite such as product details. For example,
-  if the user is interested in the watch they can press the button "Buy Now". They can also sort products by price,
-  name, rating and category. Furthermore, when the site admin is logged in, it can edit or delete products.<br>
+if the user is interested in the watch they can press the button "Buy Now". They can also sort products by price,
+name, rating and category. Furthermore, when the site admin is logged in, it can edit or delete products.<br>
 
 ### Products Details
 
 ![Product Details ](./assets/readme/features/watches_clocks_products_details.jpg)
 
 - This feature is at the top of the Product Details Page. Here users can see the product image and product
-  information such as price, category, gendercategory and rating. If the user is interested in the watch they can 
-  choose the product size, product quantity and add the product to their shopping bag. Also, the user can leave the 
-  page by pressing the button "Keep Shopping".
+information such as price, category, gendercategory and rating. If the user is interested in the watch they can 
+choose the product size, product quantity and add the product to their shopping bag. Also, the user can leave the 
+page by pressing the button "Keep Shopping".
 
 ### Products Details - Features
 
@@ -270,7 +271,7 @@ changing the product status to sale. This is completed through the admin panel o
 
 ![Products Shopping Bag](./assets/readme/features/watches_clocks_bag_page.jpg)
 
-- TThis feature is called the Shopping bag. Here, users can add products and quantities. Check the total price, and delivery costs and go 
+- This feature is called the Shopping bag. Here, users can add products and quantities. Check the total price, and delivery costs and go 
 to the secure checkout to finish the order. Before secure checkout. the user can also change the quantity and remove unwanted products. The
 user can also leave this page by pressing the button "Keep Shopping".<br>
 
@@ -327,7 +328,7 @@ purchase. The website admin can add products to this list by clicking the Coming
 
 ![Signup Page - Verify Email](./assets/readme/features/watches_clocks_verify_email_page.jpg)
 
-- TAfter submitting the Signup form, the user will be redirected to this page, advising them to check the link sent to their email box.<br>
+- After submitting the Signup form, the user will be redirected to this page, advising them to check the link sent to their email box.<br>
 
 ### Signup Page - Confirm Email
 
@@ -378,7 +379,7 @@ registered and will have access to the Registered User website services.<br>
 ![Footer](./assets/readme/features/watches_clocks_footer.jpg)
 
 - On the website footer, users can see basic information about the Watches & Clocks. The information includes contact, social media,
-  copyright, and a form where they can subscribe to the newsletter.<br>
+copyright, and a form where they can subscribe to the newsletter.<br>
 
 ### Page 404 - Page Not Found
 
@@ -408,7 +409,7 @@ confirmed (email used to sign up) at the top right of the page Login.<br>
 
 ![Login](./assets/readme/features/interactive_messages/watches_clocks_messages_login.jpg)
 
-- WWhen users sign in to the website they will see a message "Successfully signed in as (username)" at the top right of the page.<br>
+- When users sign in to the website they will see a message "Successfully signed in as (username)" at the top right of the page.<br>
 
 ### Logout
 
@@ -426,7 +427,7 @@ confirmed (email used to sign up) at the top right of the page Login.<br>
 
 ![Service Review - Add Review](./assets/readme/features/interactive_messages/watches_clocks_messages_review_sent.jpg)
 
-- WWhen users are logged in to the website they can add a service review. When they submit the review they
+- When users are logged in to the website they can add a service review. When they submit the review they
 will see a message "Your review was sent successfully and is awaiting approval" at the top right of the page.<br>
 
 ### Service Review - Update Review 1
@@ -583,9 +584,9 @@ This age range is viewed as the most likely to become potential customers.<br>
 ### Mailchimp Subscription Service
 
 - Users are encouraged to signup for newsletters, discounts and information about the products sold at Watches & Clocks.
-  The signup form is available on the website footer and is present on any page. The email subscription service is run through
-  Mailchimp, allowing the website admin to send marketing emails through the platform, increasing engagement within the site. Below
-  is a screenshot of the Watches & Clocks - Mailchimp dashboard.
+The signup form is available on the website footer and is present on any page. The email subscription service is run through
+Mailchimp, allowing the website admin to send marketing emails through the platform, increasing engagement within the site. Below
+is a screenshot of the Watches & Clocks - Mailchimp dashboard.
 
 ![ Mailchimp Subscription Service](./assets/readme/extras/watches_clocks_mailchimp_dashborad.jpg)<br>
 
@@ -900,23 +901,24 @@ Testing results are [here](TESTING.md)
 4. Next select your region
 5. Click on the Create App button
 6. Click in resources and select Heroku Postgres database
-7. Click Reveal Config Vars and add a new record with SECRET_KEY
-8. Click Reveal Config Vars and add a new record with the AWS_ACCESS_KEY_ID
-9. Click Reveal Config Vars and add a new record with the AWS_SECRET_ACCESS_KEY
-10. Click Reveal Config Vars and add a new record with the EMAIL_HOST_PASS
-11. Click Reveal Config Vars and add a new record with the EMAIL_HOST_USER
-12. Click Reveal Config Vars and add a new record with the STRIPE_PUBLIC_KEY
-13. Click Reveal Config Vars and add a new record with the STRIPE_SECRET_KEY
-14. Click Reveal Config Vars and add a new record with the STRIPE_WH_SECRET
-15. Click Reveal Config Vars and add a new record with the DISABLE_COLLECTSTATIC = 1
-16. The next page is the project’s Deploy Tab. Click on the Settings Tab and scroll down to Config Vars
-17. Next, scroll down to the Buildpack section click Add Buildpack select python and click Save Changes
-18. Scroll to the top of the page and choose the Deploy tab
-19. Select Github as the deployment method
-20. Confirm you want to connect to GitHub
-21. Search for the repository name and click the connect button
-22. Scroll to the bottom of the deploy page and select the preferred deployment type
-23. Click Enable Automatic Deploys for automatic deployment when you push updates to Github<br>
+7. Click Reveal Config Vars and add:
+ * A new record with SECRET_KEY
+ * A new record with the AWS_ACCESS_KEY_ID
+ * A new record with the AWS_SECRET_ACCESS_KEY
+ * A new record with the EMAIL_HOST_PASS
+ * A new record with the EMAIL_HOST_USER 
+ * A new record with the STRIPE_PUBLIC_KEY
+ * A new record with the STRIPE_SECRET_KEY
+ * A new record with the STRIPE_WH_SECRET
+ * A new record with the DISABLE_COLLECTSTATIC = 1
+8.  The next page is the project’s Deploy Tab. Click on the Settings Tab and scroll down to Config Vars
+9.  Next, scroll down to the Buildpack section click Add Buildpack select python and click Save Changes
+10. Scroll to the top of the page and choose the Deploy tab
+11. Select Github as the deployment method
+15. Confirm you want to connect to GitHub
+16. Search for the repository name and click the connect button
+17. Scroll to the bottom of the deploy page and select the preferred deployment type
+18. Click Enable Automatic Deploys for automatic deployment when you push updates to Github<br>
 
 ## Final Deployment
 
