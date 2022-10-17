@@ -88,7 +88,7 @@ Lighthouse was used to test Performance, Best Practices, Accessibility and SEO o
 ![Lighthouse Desktop Result](./assets/readme/test/watches_clocks_light_house_desktop_results.jpg).
 
 ###### Mobile Results:
-![Lighthouse Mobile Result](./assets/readme/test/tasty_blog_lighthouse_mobile_results.jpg).
+![Lighthouse Mobile Result](./assets/readme/test/watches_clocks_light_house_mobile_results.jpg).
 
 ### CSS Validation
 * Custom CSS was validated using W3C Jigsaw validation service. Fifty-three warnings were displayed, however, 
